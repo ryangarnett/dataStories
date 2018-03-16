@@ -1,0 +1,226 @@
+---
+title: "Municipal Chief Data Officer Review"
+output: html_notebook
+---
+City of Toronto Data Story <br>
+Open Data Team <br>
+Author: Ryan Garnett <br>
+March 15, 2018
+
+### 1.0 Prerequisites and Source Data
+Loading the packages and data needed for the analysis
+```{r}
+library(tidyverse)
+library(RCurl)
+library(leaflet)
+
+sourceData <- read_csv("https://raw.githubusercontent.com/ryangarnett/dataStories/master/CDOevaluation.csv")
+sourceData
+```
+
+
+### 2.0 The Chief Data Officer Role
+
+
+Theme 2b of the Open Data Master Plan identifies the need to "Explore creation of a Chief Data Officer role to take ownership of the Open Data
+ program and related areas".
+
+#### 2.1 Different Titles
+
+```{r}
+# View CDO titles
+
+sourceData %>%
+  select(Title) %>%
+  count(Title) %>%
+  arrange(desc(n))
+```
+
+
+#### 2.2 Reporting Structure
+
+```{r}
+# Reports to
+
+sourceData %>%
+  select(ReportsTo) %>%
+  count(ReportsTo) %>%
+  arrange(desc(n))
+```
+
+```{r}
+# Group reporting structure
+
+reporting <- select(sourceData, ReportsTo)
+mutate(reporting, ReportingTo = ifelse(ReportsTo == "Chief Information Officer", "CIO", 
+                          ifelse(ReportsTo == "Deputy Mayor", "Mayor's Office",
+                          ifelse(ReportsTo == "Mayor", "Mayor's Office",
+                          ifelse(ReportsTo == "1st Deputy Mayor", "Mayor's Office",
+                          ifelse(ReportsTo == "Chief Innovation & Performance Officer", "Performance & Innovation Office",
+                          ifelse(ReportsTo == "Chief Performance Officer", "Performance & Innovation Office",
+                          ifelse(ReportsTo == "Chief of Civic Innovation", "Performance & Innovation Office",
+                          ifelse(ReportsTo == "Assistant County Administrator", "CAO/City Manager's Office",
+                          ifelse(ReportsTo == "Chief Adimistrative Officer", "CAO/City Manager's Office",
+                          ifelse(ReportsTo == "Deputy City Manager", "CAO/City Manager's Office",
+                          ifelse(ReportsTo == "Director of Performance and Analytics", "Performance & Innovation Office",
+                          ifelse(ReportsTo == "Organizational Performance Director", "Performance & Innovation Office",
+                          ReportsTo))))))))))))) %>%
+  count(ReportingTo) %>%
+  arrange(desc(n))
+```
+
+
+#### 2.3 Supporting Team
+
+
+
+```{r}
+# Calculate average team size
+summarise(sourceData, AvgTeamSize = mean(TeamSize, na.rm = T)) %>%
+  round(2)
+```
+On average a municipal Chief Data Officer has a team consisting of ten people.
+
+
+#### 2.4 Responsibilities
+
+```{r}
+# Open Data
+sourceData %>%
+  count(HasOpenData) %>%
+  arrange(desc(n))
+
+ggplot(sourceData, aes(HasOpenData)) +
+  geom_bar()
+```
+
+```{r}
+# Data Analytics
+sourceData %>%
+  count(HasAnalytics) %>%
+  arrange(desc(n))
+
+ggplot(sourceData, aes(HasAnalytics)) +
+  geom_bar()
+```
+
+
+#### 2.5 Educational Backgroud
+
+```{r}
+# Degree type
+sourceData %>%
+  count(DegreeType) %>%
+  arrange(desc(n))
+```
+
+```{r}
+# Grouping degree types
+degreeClass <- mutate(sourceData, Degree = ifelse(DegreeType == "PhD", "Doctorate",
+                         ifelse(DegreeType == "Masters", "Masters",
+                          ifelse(DegreeType == "MBA", "Masters",
+                          ifelse(DegreeType == "MSc", "Masters",
+                          ifelse(DegreeType == "BA", "Bachelors",
+                          ifelse(DegreeType == "BSc", "Bachelors",
+                          "None")))))))
+
+ggplot(degreeClass, aes(Degree)) +
+  geom_bar()
+```
+
+
+
+```{r}
+# Degree focus areas
+
+degreeFocus <- select(sourceData,DegreeFocus) %>%
+  count(DegreeFocus) %>%
+  arrange(desc(n))
+degreeFocus
+```
+
+
+
+```{r}
+# Grouping degree focus areas
+select(degreeFocus, DegreeFocus) %>%
+mutate(focusArea = ifelse(DegreeFocus == "Public Policy Analysis", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "Public Policy", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "City Planning", "City Planning",
+                    ifelse(DegreeFocus == "Computer Programming and Design", "Computer Science",
+                    ifelse(DegreeFocus == "Computer Science", "Computer Science",
+                    ifelse(DegreeFocus == "Economics", "Economics",
+                    ifelse(DegreeFocus == "Engineering", "Engineering",
+                    ifelse(DegreeFocus == "Entrepreneurship in Science, Engineer and Technology", "Entrepreneurship",
+                    ifelse(DegreeFocus == "Environment Heath & Public Administration", "Environmental Health",
+                    ifelse(DegreeFocus == "Information Systems", "Information Systems",
+                    ifelse(DegreeFocus == "International Business", "Business",
+                    ifelse(DegreeFocus == "Organizational Change", "Organizational Change",
+                    ifelse(DegreeFocus == "Political Science", "Political Science",
+                    ifelse(DegreeFocus == "Politics", "Political Science",
+                    ifelse(DegreeFocus == "Public Administration", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "Soil Science", "Soil Science",
+                    "None"))))))))))))))))) %>%
+  arrange(focusArea)
+```
+
+
+
+
+
+```{r}
+mutate(sourceData, FocusArea = ifelse(DegreeFocus == "Public Policy Analysis", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "Public Policy", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "City Planning", "City Planning",
+                    ifelse(DegreeFocus == "Computer Programming and Design", "Computer Science",
+                    ifelse(DegreeFocus == "Computer Science", "Computer Science",
+                    ifelse(DegreeFocus == "Economics", "Economics",
+                    ifelse(DegreeFocus == "Engineering", "Engineering",
+                    ifelse(DegreeFocus == "Entrepreneurship in Science, Engineer and Technology", "Entrepreneurship",
+                    ifelse(DegreeFocus == "Environment Heath & Public Administration", "Environmental Health",
+                    ifelse(DegreeFocus == "Information Systems", "Information Systems",
+                    ifelse(DegreeFocus == "International Business", "Business",
+                    ifelse(DegreeFocus == "Organizational Change", "Organizational Change",
+                    ifelse(DegreeFocus == "Political Science", "Political Science",
+                    ifelse(DegreeFocus == "Politics", "Political Science",
+                    ifelse(DegreeFocus == "Public Administration", "Public Policy/Admin",
+                    ifelse(DegreeFocus == "Soil Science", "Soil Science",
+                    "None"))))))))))))))))) %>%
+count(FocusArea) %>%
+  arrange(desc(n))
+```
+
+
+
+
+
+### 3.0 Municipal CDO Distribution
+
+
+```{r}
+# Map the CDO locations
+
+m <- leaflet(width = "100%") %>%
+  addTiles() %>%
+  addMarkers(lng = sourceData$Long, lat = sourceData$Lat, 
+             popup = paste("Organization:", sourceData$Organization, "<br>",
+                           "Title:", sourceData$Title, "<br>",
+                           "Reports to:", sourceData$ReportsTo, "<br>",
+                           "Team size:", sourceData$TeamSize, "<br>",
+                           "Responsible for open data:", sourceData$HasOpenData, "<br>",
+                           "Responsible for analytics:", sourceData$HasAnalytics))
+m
+```
+
+
+
+### 4.0 Source Information
+
+Lessons from Leading CDOs: A Framework for Better Civic Analytics <br>
+Harvard Kennedy School - Ash Center for Democracic Governance and Innovation <br>
+http://ash.harvard.edu/files/ash/files/leasons_from_leading_cdos.pdf
+
+Chief Data Officer Profiles <br>
+www.linkedin.com
+
+
