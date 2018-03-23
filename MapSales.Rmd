@@ -1,0 +1,156 @@
+---
+title: "GCC Services - t-shirt sizes"
+output: html_notebook
+---
+
+```{r}
+# Loading the packages and data needed for the analysis
+
+library(tidyverse)
+library(stringr)
+library(lubridate)
+mapSales <- read_csv("C:/WorkDocs/Analysis/GCCService/MapSales20180320.csv", locale = locale(asciify = TRUE, encoding = "ASCII"))
+
+head(mapSales)
+```
+
+
+```{r}
+# Explore the data
+
+str(mapSales)
+```
+
+
+```{r}
+# Tidy source data
+# Standardize division names
+cleanData <- mutate(mapSales, CITYDIVISION = ifelse(DIVISION == "ABC - Board of Health", "ABC",
+                    ifelse(DIVISION == "Affordable Housing Office", "Shelter Support Housing Admin",
+                    ifelse(DIVISION == "Children s Services", "Childrens Services",
+                    ifelse(DIVISION == "City Clerks Office", "City Clerks",
+                    ifelse(DIVISION == "City Planning Division", "City Planning",
+                    ifelse(DIVISION == "Community Planning", "City Planning",
+                    ifelse(DIVISION == "Councillor Assistant", "Councillor",
+                    ifelse(DIVISION == "Deputy City Manager B Office", "City Managers Office",
+                    ifelse(DIVISION == "City Manager s Office", "City Managers Office",
+                    ifelse(DIVISION == "DV Brickworks", "External",
+                    ifelse(DIVISION == "Engineering & Construction Services", "Engineering Construction Services",
+                    ifelse(DIVISION == "Engineering & Constructions Services", "Engineering Construction Services",
+                    ifelse(DIVISION == "Engineering Services", "Engineering Construction Services",
+                    ifelse(DIVISION == "Facilities & Real Estate", "Facilities Management",
+                    ifelse(DIVISION == "Finance & Admin.", "Finance & Admin.",
+                    ifelse(DIVISION == "Fire Stn 412", "Fire Services",
+                    ifelse(DIVISION == "Forestry & Recreation", "Parks Forestry & Recreation",
+                    ifelse(DIVISION == "Heritage Toronto", "City Planning",
+                    ifelse(DIVISION == "Humber Treatment Plant", "Toronto Water",
+                    ifelse(DIVISION == "ITS Operations", "Information & Technology",
+                    ifelse(DIVISION == "Office of the Chief Corporate Office", "Chief Corporate Office",
+                    ifelse(DIVISION == "Office of the Mayor", "Mayors Office",
+                    ifelse(DIVISION == "Parks Forestry & Rec.", "Parks Forestry & Recreation",
+                    ifelse(DIVISION == "Parks Forestry + Recreation", "Parks Forestry & Recreation",
+                    ifelse(DIVISION == "Parks, Forestry & Recreation", "Parks Forestry & Recreation",
+                    ifelse(DIVISION == "Policy, Planning, Finance & Admin.", "Policy Planning Finance & Admin",
+                    ifelse(DIVISION == "Public Consultation Unit", "Public Consultation",
+                    ifelse(DIVISION == "Social Development & Administration", "Social Development & Admin",
+                    ifelse(DIVISION == "Technical Services", "Engineering Construction Services",
+                    ifelse(DIVISION == "Toronto Fire Services", "Fire Services",
+                    ifelse(DIVISION == "Toronto Paramedic Services", "Paramedic Services",
+                    ifelse(DIVISION == "Toronto Public Health", "Public Health",
+                    ifelse(DIVISION == "Traffic Planning, TEY District", "Transportation Services",
+                    ifelse(DIVISION == "Transit Projects", "Transportation Services",
+                    ifelse(DIVISION == "Urban Forestry", "Parks Forestry & Recreation",
+                    ifelse(DIVISION == "Zoning By-law and Environmental Planning", "City Planning",
+                    DIVISION)))))))))))))))))))))))))))))))))))))
+
+cleanData <- rename(cleanData, OrderDate = 'ORDERDATE', Division = 'CITYDIVISION', OrderType = 'ORDERTYPE', PaymentMethod = 'PAYMENTMETHOD', OrderAmount = 'TOTAL_ORDER_AMOUNT')
+
+cleanData <- cleanData %>%
+  select(OrderDate, Division, OrderType, PaymentMethod, OrderAmount)
+
+# Clean ordertype column
+cleanData <- cleanData %>%
+data.frame(OrderType = cleanData$OrderType) %>%
+separate(OrderType, c("Type1", "Type2", "Type3", "Type4", "Type5"))
+
+# Convert string date to date field and extract year to new column
+cleanData$OrderYear <- year(mdy_hm(cleanData$OrderDate))
+
+# Reorder columns
+cleanData <- cleanData[c("OrderYear", "Division", "PaymentMethod", "OrderAmount", "Type1", "Type2", "Type3", "Type4", "Type5")]
+
+
+# Remove the '$' from column OrderAmount and convert from character to numeric
+# cleanData$OrderAmount = as.numeric(gsub("\\$", "", cleanData$OrderAmount))
+
+head(cleanData)
+
+```
+
+
+```{r}
+# Exploring payment method data
+
+cleanData %>%
+  group_by(PaymentMethod) %>%
+  summarise (n = n()) %>%
+  mutate(Portion = round(n / sum(n) * 100))
+
+ggplot(cleanData, aes(PaymentMethod)) +
+  geom_bar()
+```
+
+
+
+```{r}
+# Combine all type columns into a single column
+
+prod1 <- cleanData %>%
+  select(Division, Type1, OrderAmount) %>%
+  filter(!is.na(Type1)) %>%
+  rename(Product = 'Type1')
+prod2 <- cleanData %>%
+  select(Division, Type2, OrderAmount) %>%
+  filter(!is.na(Type2)) %>%
+  rename(Product = 'Type2')
+prod3 <- cleanData %>%
+  select(Division, Type3, OrderAmount) %>%
+  filter(!is.na(Type3)) %>%
+  rename(Product = 'Type3')
+prod4 <- cleanData %>%
+  select(Division, Type4, OrderAmount) %>%
+  filter(!is.na(Type4)) %>%
+  rename(Product = 'Type4')
+prod5 <- cleanData %>%
+  select(Division, Type5, OrderAmount) %>%
+  filter(!is.na(Type5)) %>%
+  rename(Product = 'Type5')
+
+allProducts <- rbind(prod1, prod2, prod3, prod4, prod5)
+
+
+# Count of all products
+count(allProducts)
+```
+
+
+```{r}
+# Top Divisions using MapSales
+
+topDivisions <- cleanData %>%
+  count(Division) %>%
+  arrange(desc(n)) %>%
+  filter(n > 10)
+
+topDivisions
+```
+
+
+```{r}
+
+allProducts %>%
+  count(Division, Product) %>%
+  arrange(desc(n))
+```
+
+
