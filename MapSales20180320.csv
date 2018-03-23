@@ -1,0 +1,803 @@
+ORDERID,ORDERDATE,PAYMENTMETHOD,DIVISION,ORDERTYPE, TOTAL_ORDER_AMOUNT 
+10250,01/03/2013 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,TOPOPARCEL|CUMAP,$452.00
+10259,01/07/2013 0:00,Fee Waived - City Staff Use,City Manager s Office,MAPPING,$813.60
+10260,01/08/2013 0:00,Fee Waived - City Staff Use,City Manager s Office,MAPPING,$813.60
+10267,01/09/2013 0:00,Fee Waived - Consultant,City Solicitorùs Office,MAPPING,$62.15
+10268,01/09/2013 0:00,Fee Waived - Consultant,City Solicitorùs Office,MAPPING,$184.76
+10262,01/09/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP,$452.00
+10264,01/09/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP,$452.00
+10272,01/10/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP|PDM,$565.00
+10284,01/16/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$16.95
+10283,01/16/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$16.95
+10287,01/18/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$74.58
+10296,01/22/2013 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$813.60
+10298,01/22/2013 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$28.25
+10303,01/23/2013 0:00,Fee Waived - City Staff Use,City Council,TOPOPARCEL,"$4,132.41"
+10307,01/23/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$113.00
+10308,01/23/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$28.25
+10316,01/25/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$90.40
+10318,01/25/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$28.25
+10319,01/25/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$56.50
+10325,01/31/2013 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$847.50
+10340,02/06/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING|TOPOPARCEL,"$4,507.01"
+10351,02/08/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$3,953.31"
+10352,02/08/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$4,518.31"
+10353,02/08/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$16,556.76"
+10359,02/12/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$39.55
+10365,02/14/2013 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$158.20
+10368,02/19/2013 0:00,Fee Waived - City Staff Use,Community Planning,MAPPING|TOPOPARCEL,"$3,474.75"
+10371,02/20/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,"$3,409.89"
+10372,02/20/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,"$3,409.89"
+10373,02/20/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,"$5,208.40"
+10376,02/21/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,PDM|TOPOPARCEL|CUMAP,"$24,652.53"
+10377,02/21/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$2,909.75"
+10379,02/21/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,"$5,156.42"
+10380,02/22/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP,"$5,156.42"
+10383,02/25/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+10398,03/05/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$19,147.85"
+10403,03/06/2013 0:00,Fee Waived - City Staff Use,Fire Stn 412,MAPPING,$16.95
+10400,03/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$56.50
+10401,03/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$56.50
+10406,03/06/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$1,986.43"
+10405,03/06/2013 0:00,Fee Waived - Consultant,Transportation Services,MAPPING|PDM,"$1,073.50"
+10407,03/06/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING|PDM,"$1,073.50"
+10416,03/07/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+10408,03/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING|PDM,"$1,850.83"
+10412,03/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING|PDM,"$1,850.83"
+10419,03/08/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$5,907.08"
+10424,03/08/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|MAPPING,"$12,452.60"
+10426,03/11/2013 0:00,Fee Waived - City Staff Use,Fire Services,PDM,$4.52
+10429,03/12/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10436,03/13/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$62.15
+10445,03/18/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$11.30
+10453,03/20/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$67.80
+10462,03/26/2013 0:00,Fee Waived - City Staff Use,Facilities & Real Estate,MAPPING,$11.30
+10473,04/02/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$28.25
+10474,04/02/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING,$28.25
+10482,04/03/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|MAPPING,"$1,017.00"
+10483,04/04/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|MAPPING,"$1,017.00"
+10491,04/08/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|MAPPING,"$1,017.00"
+10494,04/09/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10493,04/09/2013 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$67.80
+10503,04/10/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$67.80
+10502,04/10/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$2,237.29"
+10504,04/11/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10506,04/12/2013 0:00,Fee Waived - City Staff Use,City Planning,PDM|MAPPING,$932.25
+10527,04/19/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$84.75
+10523,04/19/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",PDM,$158.20
+10532,04/22/2013 0:00,Fee Waived - City Staff Use,Engineering Services,MAPPING|TOPOPARCEL,$689.30
+10536,04/23/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$689.30
+10537,04/23/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$2,076.04"
+10543,04/29/2013 0:00,Fee Waived - City Staff Use,"Policy, Planning, Finance & Admin.",MAPPING,$67.80
+10546,04/30/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING, $-   
+10545,04/30/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$689.30
+10547,04/30/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$2,076.04"
+10548,04/30/2013 0:00,Fee Waived - Consultant,Unknown,TOPOPARCEL|MAPPING|PDM|CUMAP,"$113,192.10"
+10551,05/02/2013 0:00,Fee Waived - City Staff Use,Police Services,TOPOPARCEL,"$216,960.00"
+10552,05/02/2013 0:00,Fee Waived - City Staff Use,Police Services,TOPOPARCEL,"$216,960.00"
+10556,05/02/2013 0:00,Fee Waived - City Staff Use,"Policy, Planning, Finance & Admin.",MAPPING,$67.80
+10562,05/06/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,$293.80
+10571,05/07/2013 0:00,Fee Waived - City Staff Use,Accounting Services,MAPPING,$56.50
+10568,05/07/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$113.00
+10569,05/07/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$282.50
+10570,05/07/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$84.75
+10577,05/08/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING,$113.00
+10584,05/13/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$35.03
+10585,05/14/2013 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$28.25
+10593,05/15/2013 0:00,Fee Waived - Consultant,City Planning,MAPPING|TOPOPARCEL,$638.45
+10591,05/15/2013 0:00,Fee Waived - City Staff Use,Parks Forestry & Rec.,MAPPING,$33.90
+10598,05/16/2013 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|MAPPING|PDM|CUMAP,"$88,758.11"
+10604,05/17/2013 0:00,Fee Waived - City Staff Use,"Policy, Planning, Finance & Admin.",MAPPING,$67.80
+10608,05/22/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING|CUMAP,$293.80
+10609,05/22/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING|CUMAP,$226.00
+10619,05/27/2013 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|MAPPING,"$33,736.15"
+10620,05/27/2013 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|MAPPING|PDM|CUMAP,"$88,758.11"
+10623,05/28/2013 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,TOPOPARCEL|CUMAP,$452.00
+10630,05/29/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10649,06/06/2013 0:00,Fee Waived - City Staff Use,"Policy, Planning, Finance & Admin.",MAPPING,$67.80
+10660,06/12/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+10664,06/13/2013 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|MAPPING|PDM|CUMAP,"$21,543.45"
+10668,06/14/2013 0:00,Fee Waived - City Staff Use,Urban Forestry,MAPPING,$113.00
+10671,06/18/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$632.80
+10672,06/18/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$632.80
+10673,06/18/2013 0:00,Fee Waived - City Staff Use,Police Services,TOPOPARCEL,"$216,960.00"
+10682,06/19/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10681,06/19/2013 0:00,Fee Waived - City Staff Use,Public Consultation Unit,MAPPING,$67.80
+10688,06/20/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10683,06/20/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,"$6,893.00"
+10689,06/21/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP,"$5,291.56"
+10695,06/25/2013 0:00,Fee Waived - City Staff Use,Parks Forestry & Rec.,MAPPING,$67.80
+10700,06/27/2013 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$56.50
+10706,06/28/2013 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$28.25
+10704,06/28/2013 0:00,Fee Waived - City Staff Use,Toronto Fire Services,MAPPING, $-   
+10705,06/28/2013 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL,"$4,769.73"
+10712,07/03/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,PDM,"$104,073.00"
+10715,07/04/2013 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$1,672.40"
+10717,07/04/2013 0:00,Fee Waived - Consultant,TO2015 PanAm/ParapanAm,PDM,$226.00
+10720,07/09/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$152.55
+10725,07/11/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|CUMAP|PDM|MAPPING,"$11,841.95"
+10730,07/15/2013 0:00,Fee Waived - City Staff Use,Transportation Services,PDM,$158.20
+10735,07/16/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,$452.00
+10740,07/17/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP,$452.00
+10746,07/18/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,PDM,$158.20
+10742,07/18/2013 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$28.25
+10741,07/18/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$248.60
+10756,07/23/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$1,356.00"
+10760,07/23/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$67.80
+10766,07/25/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$35.03
+10765,07/25/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$67.80
+10767,07/26/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP,$452.00
+10772,07/30/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|MAPPING,"$3,855.56"
+10777,08/01/2013 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING,$67.80
+10774,08/01/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,"$2,914.72"
+10775,08/01/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$508.50
+10776,08/01/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$508.50
+10779,08/01/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING|TOPOPARCEL|CUMAP,"$14,887.07"
+10780,08/01/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING|TOPOPARCEL|CUMAP,"$13,832.33"
+10782,08/01/2013 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING|TOPOPARCEL|CUMAP,"$14,887.07"
+10783,08/02/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$28.25
+10799,08/07/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$28.25
+10795,08/07/2013 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,"$2,971.22"
+10796,08/07/2013 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$508.50
+10797,08/07/2013 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$678.00
+10801,08/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,"$2,971.22"
+10803,08/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$508.50
+10804,08/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,$508.50
+10793,08/07/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,"$2,971.22"
+10813,08/09/2013 0:00,Fee Waived - City Staff Use,Information & Technology,MAPPING,$28.25
+10823,08/15/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$28,523.23"
+10824,08/15/2013 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL|MAPPING,"$28,523.23"
+10828,08/19/2013 0:00,Fee Waived - City Staff Use,Public Consultation Unit,MAPPING,$67.80
+10829,08/19/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$28,523.23"
+10831,08/20/2013 0:00,Fee Waived - City Staff Use,"Policy, Planning, Finance & Admin.",MAPPING,$67.80
+10835,08/21/2013 0:00,Fee Waived - City Staff Use,TO2015 PanAm/ParapanAm,TOPOPARCEL|MAPPING,"$2,128.92"
+10841,08/26/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$67.80
+10842,08/26/2013 0:00,Fee Waived - City Staff Use,Office of the Mayor,MAPPING,$28.25
+10843,08/26/2013 0:00,Fee Waived - Consultant,Parks Forestry & Rec.,PDM|TOPOPARCEL|CUMAP|MAPPING,"$2,101.80"
+10852,08/29/2013 0:00,Fee Waived - City Staff Use,Deputy City Manager B Office,MAPPING,$28.25
+10855,08/30/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING|PDM,"$1,045.25"
+10869,09/12/2013 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING,$56.50
+10875,09/13/2013 0:00,Fee Waived - Consultant,Toronto Public Health,MAPPING,"$11,300.00"
+10876,09/13/2013 0:00,Fee Waived - Consultant,Toronto Public Health,MAPPING,"$9,944.00"
+10877,09/13/2013 0:00,Fee Waived - Consultant,Toronto Public Health,MAPPING,"$11,300.00"
+10884,09/17/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10885,09/17/2013 0:00,Fee Waived - City Staff Use,Community Planning,MAPPING,$27.12
+10890,09/20/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$113.00
+10892,09/20/2013 0:00,Fee Waived - Consultant,Urban Forestry,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+10893,09/20/2013 0:00,Fee Waived - Consultant,Urban Forestry,MAPPING,$67.80
+10898,09/23/2013 0:00,Fee Waived - Consultant,Toronto Public Health,MAPPING,$565.00
+10894,09/23/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$56.50
+10895,09/23/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$56.50
+10903,09/24/2013 0:00,Fee Waived - City Staff Use,City Planning Division,MAPPING,$33.90
+10904,09/24/2013 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,$565.00
+10905,09/24/2013 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,"$2,825.00"
+10906,09/24/2013 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,"$2,825.00"
+10913,09/25/2013 0:00,Fee Waived - Consultant,DV Brickworks,TOPOPARCEL,$226.00
+10910,09/25/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP,$452.00
+10911,09/25/2013 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$254.25
+10914,09/26/2013 0:00,Fee Waived - City Staff Use,Accounting Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+10919,09/26/2013 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$28.25
+10915,09/26/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+10920,09/27/2013 0:00,Fee Waived - Consultant,Urban Forestry,MAPPING,$367.25
+10921,09/30/2013 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$254.25
+10922,09/30/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$254.25
+10923,10/01/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+10924,10/01/2013 0:00,Fee Waived - City Staff Use,Councillor,MAPPING,$28.25
+10925,10/02/2013 0:00,Fee Waived - City Staff Use,Public Consultation Unit,MAPPING,$67.80
+10927,10/03/2013 0:00,Fee Waived - City Staff Use,City Clerkùs Office,MAPPING,$28.25
+10934,10/08/2013 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$1,423.80"
+10936,10/08/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",PDM,$28.25
+10942,10/10/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,243.00"
+10947,10/16/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,582.00"
+10948,10/16/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,243.00"
+10949,10/16/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,243.00"
+10956,10/18/2013 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,"$180,800.00"
+10963,10/18/2013 0:00,Fee Waived - Consultant,Waterfront Secretariat,TOPOPARCEL|MAPPING,"$65,262.02"
+10965,10/22/2013 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,CUMAP|TOPOPARCEL,$452.00
+10974,10/23/2013 0:00,Fee Waived - City Staff Use,Affordable Housing Office,MAPPING,$135.60
+10975,10/23/2013 0:00,Fee Waived - City Staff Use,Affordable Housing Office,MAPPING,$135.60
+10968,10/23/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+10977,10/24/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING|TOPOPARCEL|CUMAP,"$1,017.00"
+10980,10/25/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$67.80
+10987,10/28/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+10983,10/28/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING,$67.80
+10990,10/30/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$350.30
+10992,10/30/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING, $-   
+10994,10/31/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|MAPPING,$452.00
+10995,10/31/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP|MAPPING,$678.00
+10998,10/31/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP,"$1,746.53"
+10999,11/01/2013 0:00,Fee Waived - City Staff Use,Accounting Services,MAPPING,$67.80
+11006,11/04/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP,"$1,746.53"
+11016,11/05/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$18,211.08"
+11010,11/05/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$1,746.53"
+11014,11/05/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP|MAPPING,$678.00
+11013,11/05/2013 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,PDM,$158.20
+11018,11/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$339.00
+11019,11/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$339.00
+11022,11/06/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$339.00
+11023,11/06/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$254.25
+11024,11/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$254.25
+11025,11/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$254.25
+11027,11/06/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$254.25
+11028,11/06/2013 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$339.00
+11029,11/06/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$339.00
+11030,11/07/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$18,154.58"
+11031,11/07/2013 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING|TOPOPARCEL,"$1,845.29"
+11032,11/07/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|MAPPING,"$5,676.56"
+11033,11/08/2013 0:00,Fee Waived - City Staff Use,Legal Services,LEGAL,$16.95
+11034,11/08/2013 0:00,Fee Waived - City Staff Use,Legal Services,MAPPING,$33.90
+11035,11/12/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|PDM|MAPPING,"$11,996.08"
+11042,11/14/2013 0:00,Fee Waived - City Staff Use,Public Consultation Unit,MAPPING,$67.80
+11043,11/14/2013 0:00,Fee Waived - City Staff Use,Public Consultation Unit,MAPPING,$67.80
+11046,11/15/2013 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,$67.80
+11050,11/18/2013 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|MAPPING|CUMAP,"$16,386.13"
+11054,11/21/2013 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP|MAPPING,"$5,953.07"
+11055,11/21/2013 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP|MAPPING,"$5,953.07"
+11057,11/21/2013 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$44,833.65"
+11059,11/22/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$6,712.20"
+11060,11/22/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$44,833.65"
+11067,11/26/2013 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|MAPPING|CUMAP,"$16,386.13"
+11072,11/27/2013 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING, $-   
+11087,11/29/2013 0:00,Fee Waived - Consultant,City Planning,MAPPING|TOPOPARCEL,"$260,917.00"
+11088,11/29/2013 0:00,Fee Waived - City Staff Use,City Planning,MAPPING|TOPOPARCEL,"$260,917.00"
+11094,12/09/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+11103,12/11/2013 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$169.50
+11111,12/13/2013 0:00,Fee Waived - City Staff Use,City Clerkùs Office,MAPPING,$135.60
+11113,12/16/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+11112,12/16/2013 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|CUMAP|MAPPING,"$2,817.77"
+11115,12/17/2013 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$169.50
+11126,12/20/2013 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+11127,12/20/2013 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$2,967.15"
+11138,12/30/2013 0:00,Fee Waived - City Staff Use,City Clerks,MAPPING,$678.00
+11139,12/30/2013 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP,"$2,515.83"
+11142,01/03/2014 0:00,Fee Waived - Consultant,Solid Waste Management,MAPPING,$73.45
+11148,01/06/2014 0:00,Fee Waived - Consultant,TO2015 PanAm/ParapanAm,PDM,$28.25
+11151,01/07/2014 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING,$28.25
+11156,01/08/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING, $-   
+11165,01/10/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING,$56.50
+11176,01/14/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11177,01/14/2014 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11178,01/14/2014 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11179,01/14/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11173,01/14/2014 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11174,01/14/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+11175,01/14/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11182,01/15/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11183,01/16/2014 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11184,01/16/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11185,01/16/2014 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11186,01/16/2014 0:00,Fee Waived - City Staff Use,Facilities Management,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11204,01/21/2014 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING|PDM,"$28,588.21"
+11207,01/21/2014 0:00,Fee Waived - City Staff Use,Finance & Admin.,MAPPING,$474.60
+11209,01/22/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+11214,01/23/2014 0:00,Fee Waived - Consultant,Facilities & Real Estate,PDM,$198.88
+11216,01/24/2014 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$67.80
+11221,01/24/2014 0:00,Fee Waived - City Staff Use,Toronto Public Health,MAPPING,$474.60
+11225,01/28/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+11228,01/28/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11247,01/29/2014 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING,$67.80
+11232,01/30/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$67.80
+11238,01/31/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11239,01/31/2014 0:00,Fee Waived - Consultant,City Planning,PDM|MAPPING,$745.80
+11236,01/31/2014 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL,"$18,542.62"
+11242,02/03/2014 0:00,Fee Waived - City Staff Use,Forestry & Recreation,MAPPING,$33.90
+11245,02/03/2014 0:00,Fee Waived - City Staff Use,Zoning By-law and Environmental Planning,MAPPING,$27.12
+11248,02/04/2014 0:00,Fee Waived - Consultant,Community Planning,PDM|MAPPING,$745.80
+11254,02/06/2014 0:00,Fee Waived - City Staff Use,Humber Treatment Plant,TOPOPARCEL|CUMAP|MAPPING,"$1,130.00"
+11293,02/24/2014 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL|MAPPING|PDM,"$28,588.21"
+11294,02/24/2014 0:00,Fee Waived - City Staff Use,City Planning,PDM|MAPPING,$745.80
+11300,02/25/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$12.43
+11309,03/03/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11311,03/03/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL,$226.00
+11312,03/03/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11307,03/03/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,"$1,243.00"
+11320,03/05/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,"$1,186.50"
+11321,03/05/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11322,03/05/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11323,03/05/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$113.00
+11324,03/05/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11325,03/05/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11335,03/07/2014 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,084.80"
+11336,03/07/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$56.50
+11345,03/11/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11380,03/11/2014 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$67.80
+11354,03/14/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL,$904.00
+11361,03/18/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+11390,03/18/2014 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$271.20
+11362,03/19/2014 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,"$2,158.30"
+11395,03/25/2014 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$67.80
+11382,03/26/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL,"$5,781.00"
+11384,03/26/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL,"$5,781.00"
+11385,03/26/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL,"$5,781.00"
+11383,03/26/2014 0:00,Fee Waived - Consultant,Unknown,MAPPING,$67.80
+11387,03/27/2014 0:00,Fee Waived - Consultant,City Planning Division,TOPOPARCEL,$113.00
+11394,03/27/2014 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$67.80
+11396,04/01/2014 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|CUMAP,$452.00
+11407,04/03/2014 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL,$113.00
+11405,04/03/2014 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|MAPPING|CUMAP|PDM,"$85,730.50"
+11404,04/03/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$13.56
+11409,04/04/2014 0:00,Fee Waived - City Staff Use,Urban Forestry,MAPPING,$108.48
+11415,04/08/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$67.80
+11413,04/08/2014 0:00,Fee Waived - City Staff Use,Urban Forestry,MAPPING,$452.00
+11420,04/10/2014 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL,$423.75
+11421,04/10/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$141.25
+11422,04/14/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$12.43
+11439,04/22/2014 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,$772.24
+11447,04/23/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$2,198.30"
+11445,04/23/2014 0:00,Fee Waived - City Staff Use,Urban Forestry,MAPPING,$81.36
+11451,04/24/2014 0:00,Fee Waived - Consultant,Metrolinx,TOPOPARCEL|CUMAP|MAPPING,"$66,560.39"
+11457,04/25/2014 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,$772.24
+11466,04/30/2014 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$28.25
+11467,04/30/2014 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,MAPPING,"$81,275.25"
+11476,05/05/2014 0:00,Fee Waived - City Staff Use,"Traffic Planning, TEY District",TOPOPARCEL|CUMAP,$452.00
+11483,05/06/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$293.80
+11484,05/06/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$293.80
+11488,05/07/2014 0:00,Fee Waived - City Staff Use,Forestry & Recreation,MAPPING,$28.25
+11491,05/12/2014 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|MAPPING,$254.25
+11497,05/14/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$5,519.82"
+11495,05/14/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,"$3,108.63"
+11498,05/15/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$5,519.82"
+11501,05/20/2014 0:00,Fee Waived - Consultant,Urban Forestry,MAPPING,"$173,189.45"
+11504,05/21/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11505,05/21/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$40.68
+11506,05/21/2014 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$176,974.95"
+11508,05/22/2014 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$21,684.70"
+11512,05/23/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$39.55
+11549,06/11/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11550,06/11/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11552,06/11/2014 0:00,Fee Waived - City Staff Use,Transportation Services,PDM,$63.28
+11555,06/12/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$16.95
+11559,06/13/2014 0:00,Fee Waived - City Staff Use,Office of the Chief Corporate Office,MAPPING,$16.95
+11563,06/17/2014 0:00,Fee Waived - City Staff Use,Transit Projects,TOPOPARCEL|MAPPING,"$20,797.65"
+11566,06/18/2014 0:00,Fee Waived - City Staff Use,Parks Forestry & Rec.,TOPOPARCEL|MAPPING,$406.80
+11568,06/19/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING|TOPOPARCEL|PDM,"$340,271.25"
+11571,06/19/2014 0:00,Fee Waived - City Staff Use,Heritage Toronto,MAPPING,$310.75
+11593,07/04/2014 0:00,Fee Waived - City Staff Use,Parks Forestry & Rec.,MAPPING,$13.56
+11624,07/18/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$39.55
+11633,07/22/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11639,07/23/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$791.00
+11648,07/28/2014 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING,$16.95
+11656,07/30/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11657,07/30/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11660,07/31/2014 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING,$158.20
+11661,07/31/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11662,08/01/2014 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL,$226.00
+11666,08/06/2014 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$113.00
+11667,08/06/2014 0:00,Fee Waived - City Staff Use,Forestry & Recreation,PDM,$22.60
+11675,08/11/2014 0:00,Fee Waived - Consultant,City Planning Division,TOPOPARCEL|CUMAP|MAPPING,"$1,604.60"
+11674,08/11/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|PDM,$565.00
+11681,08/12/2014 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$2,438.99"
+11691,08/15/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,"$2,992.35"
+11690,08/15/2014 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$452.00
+11695,08/20/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,"$2,992.35"
+11694,08/20/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$452.00
+11708,08/22/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$2,311.98"
+11709,08/25/2014 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,"$169,500.00"
+11712,08/28/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$2,204.63"
+11720,09/02/2014 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL,$525.45
+11726,09/05/2014 0:00,Fee Waived - City Staff Use,Urban Forestry,MAPPING,$6.78
+11743,09/12/2014 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING,$248.60
+11747,09/16/2014 0:00,Fee Waived - City Staff Use,Community Planning,MAPPING,$16.95
+11748,09/17/2014 0:00,Fee Waived - City Staff Use,Community Planning,MAPPING,$16.95
+11749,09/17/2014 0:00,Fee Waived - City Staff Use,Toronto Water,MAPPING,"$169,500.00"
+11754,09/18/2014 0:00,Fee Waived - Consultant,City Planning Division,MAPPING|TOPOPARCEL,"$20,255.25"
+11767,09/24/2014 0:00,Fee Waived - Consultant,City Planning Division,MAPPING|TOPOPARCEL,"$22,769.50"
+11764,09/24/2014 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING,$28.25
+11766,09/24/2014 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL,"$1,077.34"
+11769,09/25/2014 0:00,Fee Waived - Consultant,Children s Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,243.00"
+11771,09/26/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$180.80
+11770,09/26/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$180.80
+11776,09/29/2014 0:00,Fee Waived - Consultant,City Planning,MAPPING|TOPOPARCEL,"$22,769.50"
+11797,10/07/2014 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+11801,10/08/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING|PDM,$106.22
+11804,10/10/2014 0:00,Fee Waived - City Staff Use,Office of the Chief Corporate Office,MAPPING,$16.95
+11808,10/14/2014 0:00,Fee Waived - City Staff Use,Toronto Public Health,MAPPING,$96.05
+11805,10/14/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING|PDM,$146.90
+11831,10/22/2014 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$367.25
+11844,10/27/2014 0:00,Fee Waived - City Staff Use,Accounting Services,MAPPING,$339.00
+11842,10/27/2014 0:00,Fee Waived - City Staff Use,Accounting Services,MAPPING,$339.00
+11843,10/27/2014 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$339.00
+11855,10/30/2014 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$226.00
+11861,10/30/2014 0:00,Fee Waived - Consultant,Technical Services,MAPPING,$310.75
+11866,10/31/2014 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,"$11,492.10"
+11867,11/03/2014 0:00,Fee Waived - City Staff Use,Communiction Services,MAPPING, $-   
+11872,11/05/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$28.25
+11877,11/06/2014 0:00,Fee Waived - City Staff Use,City Planning Division,MAPPING,$113.00
+11883,11/12/2014 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$67.80
+11887,11/13/2014 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$375.73
+11895,11/20/2014 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$375.73
+11896,11/20/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$56.50
+11907,11/24/2014 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL,$226.00
+11920,12/01/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$1,073.50"
+11919,12/01/2014 0:00,Fee Waived - City Staff Use,Toronto Community Housing,TOPOPARCEL,"$1,077.34"
+11928,12/05/2014 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$1,214.75"
+11934,12/08/2014 0:00,Fee Waived - City Staff Use,Parks Forestry + Recreation,TOPOPARCEL|MAPPING,$339.00
+11931,12/08/2014 0:00,Fee Waived - City Staff Use,Police Services,MAPPING,$67.80
+11935,12/09/2014 0:00,Fee Waived - City Staff Use,Parks Forestry & Rec.,MAPPING,$67.80
+11944,12/16/2014 0:00,Fee Waived - City Staff Use,Technical Services,MAPPING,$67.80
+11949,12/18/2014 0:00,Fee Waived - City Staff Use,Real Estate Services,MAPPING,$11.30
+11954,12/22/2014 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,"$3,955.00"
+11961,01/02/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+11964,01/06/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$28.25
+11966,01/08/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$203.40
+11973,01/09/2015 0:00,Fee Waived - City Staff Use,Parks Forestry + Recreation,MAPPING,$45.20
+11970,01/09/2015 0:00,Fee Waived - Consultant,Technical Services,MAPPING,$146.90
+11983,01/14/2015 0:00,Fee Waived - City Staff Use,Accounting Services,TOPOPARCEL|PDM,$226.00
+11988,01/16/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+11989,01/16/2015 0:00,Fee Waived - City Staff Use,Office of the Chief Corporate Office,TOPOPARCEL|CUMAP,$452.00
+12002,01/20/2015 0:00,Fee Waived - City Staff Use,Parks Forestry + Recreation,TOPOPARCEL|PDM|MAPPING,$536.75
+12001,01/20/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|MAPPING,$536.75
+11999,01/20/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12005,01/21/2015 0:00,Fee Waived - City Staff Use,Children s Services,MAPPING,$11.30
+12003,01/21/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$11.30
+12012,01/22/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12009,01/22/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12011,01/22/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12010,01/22/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12018,01/26/2015 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,TOPOPARCEL|CUMAP,$452.00
+12023,01/28/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12026,01/29/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$5.65
+12033,02/02/2015 0:00,Fee Waived - City Staff Use,City Clerks,MAPPING,$11.30
+12035,02/02/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING, $-   
+12036,02/02/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING, $-   
+12034,02/02/2015 0:00,Fee Waived - City Staff Use,Police Services,MAPPING, $-   
+12038,02/03/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$4,678.20"
+12045,02/04/2015 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,$28.25
+12051,02/05/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$45.20
+12055,02/05/2015 0:00,Fee Waived - City Staff Use,Toronto Community Housing,TOPOPARCEL|CUMAP,"$2,370.29"
+12063,02/09/2015 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL,$452.00
+12062,02/09/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$28.25
+12066,02/10/2015 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL,"$14,129.52"
+12064,02/10/2015 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL,$452.00
+12065,02/10/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING, $-   
+12069,02/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$474.60
+12071,02/11/2015 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING,$11.30
+12080,02/13/2015 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$271.20
+12088,02/17/2015 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+12089,02/17/2015 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+12087,02/17/2015 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+12092,02/18/2015 0:00,Fee Waived - City Staff Use,Councillor,MAPPING,$271.20
+12093,02/18/2015 0:00,Fee Waived - City Staff Use,Councillor,MAPPING,$271.20
+12096,02/19/2015 0:00,Fee Waived - City Staff Use,City Planning,CUMAP,"$2,113.10"
+12098,02/19/2015 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING,$113.00
+12101,02/20/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$197.75
+12102,02/20/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12104,02/23/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$28.25
+12112,02/24/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$678.00
+12115,02/24/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$678.00
+12121,02/25/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$28.25
+12122,02/25/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$28.25
+12131,02/26/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",PDM|TOPOPARCEL|CUMAP|MAPPING,"$2,064.06"
+12132,02/26/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|PDM|MAPPING,"$2,064.06"
+12130,02/26/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12135,02/26/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING, $-   
+12160,03/10/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12163,03/10/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12161,03/10/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12159,03/10/2015 0:00,Fee Waived - City Staff Use,Councillor,MAPPING, $-   
+12176,03/11/2015 0:00,Fee Waived - City Staff Use,Accounting Services,TOPOPARCEL,$113.00
+12173,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12175,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12164,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12165,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12166,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12167,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12172,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12170,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12171,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12174,03/11/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12168,03/11/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$5.65
+12169,03/11/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$5.65
+12179,03/12/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$226.00
+12178,03/12/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$226.00
+12191,03/19/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12193,03/20/2015 0:00,Fee Waived - City Staff Use,Toronto Fire Services,MAPPING,$11.30
+12202,03/24/2015 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL,"$1,775.00"
+12199,03/24/2015 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,TOPOPARCEL|MAPPING,$226.00
+12204,03/25/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$282.50
+12206,03/25/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,"$180,800.00"
+12212,03/27/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$56.50
+12213,03/27/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$113.00
+12214,03/27/2015 0:00,Fee Waived - City Staff Use,Municipal Licensing & Standards,MAPPING,$11.30
+12220,03/30/2015 0:00,Fee Waived - Consultant,Councillor Assistant,MAPPING,$28.25
+12216,03/30/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$113.00
+12217,03/30/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$113.00
+12215,03/30/2015 0:00,Fee Waived - City Staff Use,Real Estate Services,MAPPING,$11.30
+12221,03/31/2015 0:00,Fee Waived - City Staff Use,Police Services,PDM,$158.20
+12224,04/01/2015 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|MAPPING|PDM,"$3,703.69"
+12233,04/08/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12236,04/09/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$339.00
+12235,04/09/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$339.00
+12241,04/10/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$226.00
+12239,04/10/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$226.00
+12240,04/10/2015 0:00,Fee Waived - Consultant,City Planning,PDM,$226.00
+12251,04/16/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12290,05/01/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$339.00
+12304,05/07/2015 0:00,Fee Waived - Consultant,City Planning,MAPPING, $-   
+12306,05/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|PDM|MAPPING,"$2,149.15"
+12314,05/12/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$649.75
+12316,05/13/2015 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$5,562.76"
+12317,05/13/2015 0:00,Fee Waived - City Staff Use,Toronto Water,TOPOPARCEL,$339.00
+12320,05/15/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$508.50
+12329,05/22/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,"$1,110.56"
+12331,05/26/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12332,05/27/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$10,949.70"
+12353,06/04/2015 0:00,Fee Waived - Consultant,ITS Operations,MAPPING,"$2,457.75"
+12358,06/05/2015 0:00,Fee Waived - Consultant,ITS Operations,MAPPING,"$2,457.75"
+12363,06/09/2015 0:00,Fee Waived - City Staff Use,Solid Waste Management,TOPOPARCEL,$226.00
+12369,06/11/2015 0:00,Fee Waived - Consultant,ITS Operations,MAPPING,"$2,457.75"
+12370,06/11/2015 0:00,Fee Waived - Consultant,ITS Operations,MAPPING,"$1,751.50"
+12373,06/12/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$203.40
+12379,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12384,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12386,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12387,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12377,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12378,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12380,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,LEGAL,$28.25
+12381,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12382,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12383,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12385,06/17/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$28.25
+12402,06/23/2015 0:00,Fee Waived - City Staff Use,Accounting Services,MAPPING,$11.30
+12410,06/24/2015 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$7,524.67"
+12416,06/26/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12415,06/26/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12423,07/02/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$3,837.48"
+12428,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12430,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12432,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12435,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12429,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12431,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12433,07/07/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$73.45
+12437,07/08/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12447,07/10/2015 0:00,Fee Waived - Consultant,Parks Forestry + Recreation,TOPOPARCEL|CUMAP,$452.00
+12452,07/14/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$5,509.88"
+12453,07/14/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$5,509.88"
+12450,07/14/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP,$452.00
+12458,07/16/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$67.80
+12459,07/17/2015 0:00,Fee Waived - City Staff Use,Solid Waste Management,MAPPING,$11.30
+12477,07/27/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$33.90
+12478,07/28/2015 0:00,Fee Waived - Consultant,Transportation Services,MAPPING,$734.50
+12482,07/30/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$807.95
+12484,07/30/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$807.95
+12483,07/30/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$508.50
+12491,08/05/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$68.93
+12503,08/11/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,$357.51
+12508,08/12/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$16.95
+12505,08/12/2015 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,"$30,114.50"
+12507,08/12/2015 0:00,Fee Waived - Consultant,Toronto Water,CUMAP|TOPOPARCEL,"$110,467.90"
+12510,08/13/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING|TOPOPARCEL|CUMAP,"$6,124.37"
+12518,08/18/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,$531.10
+12516,08/18/2015 0:00,Fee Waived - Consultant,Toronto Water,CUMAP|TOPOPARCEL,"$110,467.90"
+12520,08/18/2015 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$11.30
+12523,08/19/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING|PDM,$960.50
+12524,08/19/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",PDM,$452.00
+12534,08/25/2015 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$6,124.37"
+12537,08/25/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$226.00
+12538,08/26/2015 0:00,Fee Waived - Consultant,City Planning,MAPPING,$949.20
+12540,08/27/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$56.50
+12548,09/03/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING,$28.25
+12549,09/03/2015 0:00,Fee Waived - Consultant,Parks Forestry + Recreation,TOPOPARCEL|PDM,$339.00
+12552,09/04/2015 0:00,Fee Waived - Consultant,City Planning,MAPPING,$949.20
+12554,09/04/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$16.95
+12763,09/09/2015 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$7.38
+12561,09/10/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$632.80
+12562,09/10/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$2,407.92"
+12563,09/10/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$632.80
+12569,09/14/2015 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL,"$1,775.00"
+12575,09/15/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP|MAPPING,"$1,203.45"
+12576,09/15/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$977.45
+12577,09/15/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$977.45
+12579,09/16/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,$632.80
+12578,09/16/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12582,09/16/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,$457.65
+12583,09/16/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,$457.65
+12586,09/17/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,$514.15
+12588,09/17/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,$457.65
+12587,09/17/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,$457.65
+12598,09/23/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$141.25
+12599,09/23/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$141.25
+12601,09/25/2015 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING,$141.25
+12603,09/25/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$802.30
+12604,09/29/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$141.25
+12605,09/29/2015 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING,$141.25
+12607,09/30/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$632.80
+12608,09/30/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$2,407.92"
+12609,09/30/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$632.80
+12622,10/07/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|MAPPING,$474.60
+12634,10/13/2015 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$2,518.54"
+12633,10/13/2015 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$2,518.54"
+12637,10/14/2015 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$2,518.54"
+12639,10/14/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$220.35
+12643,10/16/2015 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL,$339.00
+12644,10/16/2015 0:00,Fee Waived - City Staff Use,Transportation Services,TOPOPARCEL,$226.00
+12645,10/16/2015 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|PDM,"$3,225.92"
+12659,10/28/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,PDM,$113.00
+12663,10/29/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,"$7,429.75"
+12668,11/05/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,
+12669,11/05/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$14,690.00"
+12670,11/06/2015 0:00,Fee Waived - Consultant,ABC - Board of Health,MAPPING,$113.00
+12673,11/06/2015 0:00,Fee Waived - Consultant,City Planning,CUMAP|MAPPING,"$3,084.90"
+12675,11/06/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$4,678.20"
+12676,11/06/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$4,678.20"
+12678,11/06/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$4,054.44"
+12677,11/06/2015 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,"$4,366.32"
+12671,11/06/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$180.80
+12674,11/06/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$316.40
+12679,11/09/2015 0:00,Fee Waived - Consultant,City Planning,CUMAP|MAPPING,"$3,310.90"
+12697,11/20/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP,$966.38
+12702,11/24/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",CUMAP,$226.00
+12707,11/27/2015 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$203.40
+12711,11/30/2015 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",CUMAP,$226.00
+12710,11/30/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12715,12/01/2015 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,$56.50
+12730,12/09/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$40.68
+12733,12/10/2015 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP,$452.00
+12738,12/14/2015 0:00,Fee Waived - City Staff Use,City Clerks,MAPPING,$11.30
+12739,12/14/2015 0:00,Fee Waived - City Staff Use,City Clerks,MAPPING,$11.30
+12737,12/14/2015 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$24.86
+12744,12/17/2015 0:00,Fee Waived - Consultant,Facilities Management,MAPPING,$339.00
+12749,12/18/2015 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$61.47
+12756,12/22/2015 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL,"$28,281.10"
+12754,12/22/2015 0:00,Fee Waived - City Staff Use,Transportation Services,CUMAP,$226.00
+12760,12/30/2015 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL,$226.00
+12761,01/04/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING,"$2,474.33"
+12770,01/05/2016 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,"$5,632.96"
+12775,01/07/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$277.08
+12774,01/07/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|MAPPING,"$57,172.98"
+12778,01/08/2016 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,"$9,172.80"
+12790,01/15/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|CUMAP,$688.15
+12797,01/21/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$565.00
+12798,01/21/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING,"$1,017.00"
+12801,01/22/2016 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,MAPPING|PDM|TOPOPARCEL|CUMAP,"$1,152.60"
+12802,01/22/2016 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,491.60"
+12803,01/22/2016 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,265.60"
+12800,01/22/2016 0:00,Fee Waived - City Staff Use,Engineering & Construction Services,TOPOPARCEL|CUMAP|MAPPING|PDM,$785.35
+12809,01/26/2016 0:00,Fee Waived - Consultant,City Planning,PDM|MAPPING,"$14,591.26"
+12814,01/29/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$30,471.49"
+12816,01/29/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$33,593.80"
+12818,01/29/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$12,718.74"
+12815,01/29/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$15,203.29"
+12817,01/29/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$64,216.80"
+12823,02/01/2016 0:00,Fee Waived - Consultant,Transportation Services,PDM,"$1,970.54"
+12828,02/03/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$38,955.17"
+12830,02/04/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$15,203.29"
+12831,02/05/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|MAPPING,"$30,471.49"
+12838,02/09/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,"$1,311.66"
+12849,02/16/2016 0:00,Fee Waived - City Staff Use,Toronto Water,PDM,$4.93
+12848,02/16/2016 0:00,Fee Waived - Consultant,Transportation Services,PDM,$246.29
+12855,02/17/2016 0:00,Fee Waived - Consultant,Real Estate Services,TOPOPARCEL,$226.00
+12857,02/18/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|CUMAP,$452.00
+12865,02/24/2016 0:00,Fee Waived - City Staff Use,Economic Development & Culture,PDM,"$113,418.76"
+12864,02/24/2016 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$13.53
+12871,02/26/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,$605.91
+12884,03/01/2016 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$985.00
+12875,03/02/2016 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$30.78
+12881,03/04/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$226.00
+12907,03/10/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$66,195.24"
+12904,03/15/2016 0:00,Fee Waived - City Staff Use,Economic Development & Culture,PDM,$862.11
+12911,03/18/2016 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$2,709.11"
+12912,03/18/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$4,309.37"
+12913,03/18/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,"$59,166.24"
+12918,03/22/2016 0:00,Fee Waived - Consultant,City Planning,PDM,$123.15
+12919,03/22/2016 0:00,Fee Waived - Consultant,City Planning,PDM,$123.15
+12938,03/31/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$18.08
+12941,04/01/2016 0:00,Fee Waived - City Staff Use,Economic Development & Culture,TOPOPARCEL|CUMAP,$492.59
+12954,04/13/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING|TOPOPARCEL,"$1,896.37"
+12955,04/13/2016 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING, $-   
+12968,04/21/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,CUMAP|TOPOPARCEL,"$3,940.72"
+12965,04/21/2016 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$30.78
+12979,04/26/2016 0:00,Fee Waived - Consultant,City Planning Division,MAPPING|TOPOPARCEL|PDM,"$104,084.23"
+12996,05/02/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$22,035.00"
+12997,05/02/2016 0:00,Fee Waived - Consultant,Transportation Services,PDM|MAPPING|TOPOPARCEL,"$1,027.15"
+12993,05/02/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|PDM,$226.00
+12998,05/02/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|PDM|MAPPING,"$1,027.15"
+13002,05/03/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$246.32
+13019,05/09/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$246.32
+13020,05/09/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,"$22,414.88"
+13030,05/13/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|MAPPING,$813.26
+13032,05/13/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|MAPPING,$369.48
+13038,05/16/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$153.91
+13041,05/17/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$2,260.00"
+13046,05/17/2016 0:00,Fee Waived - Consultant,Social Development & Administration,PDM|MAPPING,"$1,427.11"
+13049,05/18/2016 0:00,Fee Waived - City Staff Use,City Planning Division,PDM,$4.93
+13055,05/19/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$2,406.67"
+13067,05/25/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP|MAPPING,"$2,286.49"
+13091,06/03/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$246.32
+13094,06/06/2016 0:00,Fee Waived - Consultant,Social Development & Administration,PDM,$35.28
+13103,06/07/2016 0:00,Fee Waived - Consultant,Social Development & Administration,MAPPING,$271.20
+13115,06/09/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,"$3,993.88"
+13112,06/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING,"$1,451.61"
+13120,06/10/2016 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$12.31
+13131,06/14/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|PDM|MAPPING,$908.85
+13135,06/15/2016 0:00,Fee Waived - Consultant,Social Development & Administration,CUMAP|MAPPING|PDM,"$2,759.78"
+13139,06/16/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",CUMAP,$246.32
+13145,06/17/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,$369.44
+13148,06/17/2016 0:00,Fee Waived - City Staff Use,Public Health,MAPPING,$52.88
+13144,06/17/2016 0:00,Fee Waived - Consultant,Toronto Water,PDM,$5.04
+13142,06/17/2016 0:00,Fee Waived - Consultant,Toronto Water,PDM|TOPOPARCEL,$374.48
+13152,06/20/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|PDM|MAPPING,$403.53
+13163,06/23/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$1,289.36"
+13164,06/23/2016 0:00,Fee Waived - Consultant,Social Development & Administration,TOPOPARCEL,$985.18
+13169,06/24/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,$31.45
+13170,06/27/2016 0:00,Fee Waived - City Staff Use,City Planning,MAPPING,"$1,289.36"
+13173,06/28/2016 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,"$1,226.84"
+13181,06/30/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",PDM,$615.74
+13186,07/05/2016 0:00,Fee Waived - Consultant,City Planning,PDM|MAPPING|TOPOPARCEL,"$22,117.00"
+13185,07/05/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,"$1,231.47"
+13189,07/07/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$48,849.76"
+13190,07/07/2016 0:00,Fee Waived - Consultant,Social Development & Administration,TOPOPARCEL,$985.18
+13191,07/07/2016 0:00,Fee Waived - Consultant,Social Development & Administration,PDM|CUMAP,"$1,427.11"
+13206,07/15/2016 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$27.83
+13205,07/15/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|PDM|CUMAP,$995.94
+13220,07/21/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",PDM|TOPOPARCEL|CUMAP|MAPPING,$497.63
+13237,07/27/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,TOPOPARCEL|PDM|CUMAP,$995.94
+13261,08/08/2016 0:00,Fee Waived - City Staff Use,City Planning,PDM,$5.04
+13258,08/08/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$81.78
+13262,08/09/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|CUMAP,$492.59
+13266,08/10/2016 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL|MAPPING,"$13,779.05"
+13265,08/10/2016 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,"$119,470.57"
+13269,08/11/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING|TOPOPARCEL|PDM,$497.92
+13278,08/16/2016 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|MAPPING,"$13,779.05"
+13283,08/18/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,TOPOPARCEL|MAPPING|PDM,$497.92
+13285,08/18/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL,"$5,172.19"
+13287,08/19/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",MAPPING,$157.24
+13286,08/19/2016 0:00,Fee Waived - City Staff Use,Toronto Parking Authority,CUMAP,$738.88
+13292,08/22/2016 0:00,Fee Waived - City Staff Use,Transportation Services,MAPPING,$30.78
+13299,08/24/2016 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$135.60
+13320,09/08/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$408.82
+13321,09/08/2016 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING,$408.82
+13325,09/12/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$408.82
+13329,09/14/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$62.90
+13330,09/14/2016 0:00,Fee Waived - City Staff Use,Engineering & Constructions Services,MAPPING, $-   
+13337,09/15/2016 0:00,Fee Waived - Consultant,Economic Development & Culture,CUMAP|PDM|MAPPING,"$1,487.10"
+13333,09/15/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING, $-   
+13336,09/15/2016 0:00,Fee Waived - Consultant,Toronto Water,PDM|TOPOPARCEL|CUMAP|MAPPING,"$21,720.14"
+13338,09/16/2016 0:00,Fee Waived - Consultant,ABC - Board of Health,MAPPING|CUMAP|PDM|TOPOPARCEL,"$1,335.00"
+13345,09/21/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$62.90
+13355,09/27/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|CUMAP|MAPPING|PDM,"$3,207.77"
+13358,09/28/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$246.29
+13366,10/03/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$408.82
+13369,10/04/2016 0:00,Fee Waived - City Staff Use,Toronto Paramedic Services,MAPPING,$113.00
+13372,10/06/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,"$3,176.24"
+13373,10/06/2016 0:00,Fee Waived - Consultant,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING|PDM,"$2,424.90"
+13374,10/07/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,"$3,176.24"
+13375,10/11/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,$81.78
+13383,10/18/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$17,664.07"
+13384,10/18/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$35,655.25"
+13390,10/19/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING, $-   
+13397,10/20/2016 0:00,Fee Waived - Consultant,City Planning Division,PDM|MAPPING,"$13,462.96"
+13394,10/20/2016 0:00,Fee Waived - City Staff Use,Economic Development & Culture,MAPPING,$7.38
+13402,10/21/2016 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$31.45
+13398,10/21/2016 0:00,Fee Waived - City Staff Use,City Planning,PDM|MAPPING,"$13,462.96"
+13408,10/26/2016 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$7.54
+13407,10/26/2016 0:00,Fee Waived - Consultant,Transportation Services,TOPOPARCEL|MAPPING,"$1,763.38"
+13411,10/31/2016 0:00,Fee Waived - Consultant,Engineering & Construction Services,MAPPING,"$1,390.23"
+13423,11/04/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$1,628.56"
+13422,11/04/2016 0:00,Fee Waived - City Staff Use,Fire Services,MAPPING,$7.38
+13438,11/09/2016 0:00,Fee Waived - Consultant,City Planning,MAPPING,"$4,874.42"
+13429,11/09/2016 0:00,Fee Waived - Consultant,Economic Development & Culture,TOPOPARCEL|MAPPING|PDM,$513.43
+13437,11/09/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING|TOPOPARCEL,"$4,062.02"
+13441,11/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,761.62"
+13442,11/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,635.79"
+13443,11/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,384.11"
+13444,11/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING|PDM,"$2,705.29"
+13430,11/09/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL,$125.84
+13447,11/10/2016 0:00,Fee Waived - City Staff Use,City Council,MAPPING,$44.97
+13445,11/10/2016 0:00,Fee Waived - Consultant,Toronto Water,TOPOPARCEL|CUMAP|MAPPING|PDM,"$1,635.79"
+13458,11/22/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$314.48
+13469,11/25/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$314.48
+13468,11/25/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|MAPPING,$193.64
+13474,12/01/2016 0:00,Fee Waived - Consultant,Toronto Water,MAPPING,$408.95
+13479,12/05/2016 0:00,Fee Waived - Consultant,City Planning,PDM|TOPOPARCEL,"$20,334.49"
+13481,12/06/2016 0:00,Fee Waived - City Staff Use,City Planning,TOPOPARCEL|CUMAP,$377.51
+13485,12/07/2016 0:00,Fee Waived - Consultant,Engineering & Constructions Services,MAPPING,$314.48
+13504,12/19/2016 0:00,Fee Waived - Consultant,City Planning,PDM|TOPOPARCEL,"$41,426.69"
+13506,12/19/2016 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",MAPPING,$50.33
+13508,12/20/2016 0:00,Fee Waived - Consultant,City Planning,TOPOPARCEL|CUMAP|PDM|MAPPING,"$14,402.58"
+14130,12/12/2017 0:00,Fee Waived - City Staff Use,"Parks, Forestry & Recreation",TOPOPARCEL|PDM|MAPPING,$288.79
+14132,12/14/2017 0:00,Fee Waived - City Staff Use,Police Services,MAPPING, $-   
+14137,12/20/2017 0:00,Fee Waived - Consultant,Transportation Services,PDM|TOPOPARCEL|MAPPING,"$1,454.03"
+14142,12/22/2017 0:00,Fee Waived - Consultant,Facilities Management,TOPOPARCEL|PDM,$385.07
