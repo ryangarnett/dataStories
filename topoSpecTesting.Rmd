@@ -1,0 +1,104 @@
+---
+title: "Topo Mapping Spec Change -- Testing"
+output: html_notebook
+Organization: "City of Toronto"
+Division: "Information & Technology"
+Unit: "Geospatial Competency Centre"
+Author: "Ryan Garnett"
+Date: "March 24, 2018"
+---
+
+## 1.0 Prerequesits
+
+
+```{r}
+# ReadLoad libraries and load shapefile with sf package
+library(tidyverse)
+library(sf)
+library(raster)
+library(leaflet)
+
+setwd("~/Github/dataStories/topoSpec")
+
+zoning <- st_read("zoning_subset_wgs84.shp")
+pdm <- st_read("pdm_subset_wgs84.shp")
+```
+
+
+```{r}
+pdm <- select(pdm, geometry)
+
+head(pdm)
+```
+
+
+```{r}
+# Intersect zoning with pdm boundaries
+
+zoning_int <- st_intersection(zoning, pdm)
+
+count(zoning_int$zn_lclass)
+head(zoning_int)
+plot(st_geometry(zoning_int), col = sf.colors(4, categorical = TRUE), border = 'grey', axes = TRUE)
+
+
+#plot(st_geometry(nc), col = sf.colors(12, categorical = TRUE), border = 'grey', 
+#    axes = TRUE)
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+# Convert text attributes to integer
+
+zoning_int <- mutate(zoning_int, zn_num = ifelse(zn_lclass == "Core", 1,
+                      ifelse(zn_lclass == "Industrial", 2,
+                      ifelse(zn_lclass == "Rural", 3,
+                      ifelse(zn_lclass == "Suburban", 4,
+                      0)))))
+```
+
+
+```{r}
+
+palette <- colorBin(c('#7b3294',
+                      '#c2a5cf',
+                      '#a6dba0',
+                      '#008837'), 
+                     bins = c(1, 2, 3, 4))
+```
+
+
+```{r}
+# Leaflet map
+
+#m <- leaflet(width = "100%") %>%
+#  addTiles() %>%
+#  addPolygons(data = pdm, weight = 0.5, fillColor = "purple", strokeColor = "white", fillOpacity = 1, opacity = 1)
+#m
+
+
+m <- leaflet(width = "100%") %>%
+  addTiles() %>%
+  addPolygons(
+    data = zoning, 
+    stroke = TRUE, weight = 0.25, ,smoothFactor = 0.5, 
+    color = "white", opacity = 1,
+    fillColor = "grey",
+    fillOpacity = 0.75,
+    popup = zoning$zn_lclass)
+m
+
+```
+
+
+```{r}
+st_write(zoning_int, dsn = "test.shp", driver = "ESRI Shapefile")
+
+```
+
+
