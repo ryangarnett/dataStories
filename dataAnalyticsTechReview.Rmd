@@ -1,0 +1,63 @@
+---
+title: "Data Analytics/Data Science Technology Requirements"
+output: html_notebook
+Organization: City of Toronto
+Division: Information & Technology
+Unit: Geospatial Competency Centre
+Author: Ryan Garnett
+Date: March 24, 2018
+---
+
+## Prereq and data access
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(googlesheets)
+
+# Access the sheet
+gsDA <- gs_title("Data Analytics Computing Assessment")
+
+# Accessing the data
+# List worksheets
+gs_ws_ls(gsDA)
+
+# Get data in Responses tab
+gsDATab <- gs_read(ss=gsDA, ws = "Form responses 1", skip=0)
+
+# Convert to tibble
+gsDAdf <- as.data.frame(gsDATab)  
+masterTable <- as.tibble(gsDAdf)
+
+masterTable
+```
+
+
+```{r}
+# Clean column names
+
+names(masterTable)[2] <- "performComp"
+names(masterTable)[3] <- "compType"
+names(masterTable)[4] <- "compOS"
+names(masterTable)[5] <- "compCores"
+names(masterTable)[6] <- "compRAM"
+names(masterTable)[7] <- "compHD"
+names(masterTable)[8] <- "compGCard"
+names(masterTable)[9] <- "compHrsWk"
+names(masterTable)[10] <- "avgNumDS"
+names(masterTable)[11] <- "avgDataSize"
+
+names(masterTable)[12] <- "typeSoftware"
+names(masterTable)[13] <- "progLang"
+names(masterTable)[14] <- "daTechniques"
+names(masterTable)[15] <- "bigData"
+names(masterTable)[16] <- "sector"
+names(masterTable)[17] <- "domain"
+names(masterTable)[18] <- "industry"
+
+masterTable
+```
+
+
+
+
