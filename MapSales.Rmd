@@ -9,7 +9,8 @@ output: html_notebook
 library(tidyverse)
 library(stringr)
 library(lubridate)
-mapSales <- read_csv("C:/WorkDocs/Analysis/GCCService/MapSales20180320.csv", locale = locale(asciify = TRUE, encoding = "ASCII"))
+setwd("~/Github/dataStories")
+mapSales <- read_csv("MapSales20180320.csv")
 
 head(mapSales)
 ```
@@ -39,7 +40,7 @@ cleanData <- mutate(mapSales, CITYDIVISION = ifelse(DIVISION == "ABC - Board of 
                     ifelse(DIVISION == "Engineering & Constructions Services", "Engineering Construction Services",
                     ifelse(DIVISION == "Engineering Services", "Engineering Construction Services",
                     ifelse(DIVISION == "Facilities & Real Estate", "Facilities Management",
-                    ifelse(DIVISION == "Finance & Admin.", "Finance & Admin.",
+                    ifelse(DIVISION == "Finance & Admin.", "Finance & Admin",
                     ifelse(DIVISION == "Fire Stn 412", "Fire Services",
                     ifelse(DIVISION == "Forestry & Recreation", "Parks Forestry & Recreation",
                     ifelse(DIVISION == "Heritage Toronto", "City Planning",
@@ -106,23 +107,23 @@ ggplot(cleanData, aes(PaymentMethod)) +
 # Combine all type columns into a single column
 
 prod1 <- cleanData %>%
-  select(Division, Type1, OrderAmount) %>%
+  select(Division, Type1, OrderYear, OrderAmount) %>%
   filter(!is.na(Type1)) %>%
   rename(Product = 'Type1')
 prod2 <- cleanData %>%
-  select(Division, Type2, OrderAmount) %>%
+  select(Division, Type2, OrderYear, OrderAmount) %>%
   filter(!is.na(Type2)) %>%
   rename(Product = 'Type2')
 prod3 <- cleanData %>%
-  select(Division, Type3, OrderAmount) %>%
+  select(Division, Type3, OrderYear, OrderAmount) %>%
   filter(!is.na(Type3)) %>%
   rename(Product = 'Type3')
 prod4 <- cleanData %>%
-  select(Division, Type4, OrderAmount) %>%
+  select(Division, Type4, OrderYear, OrderAmount) %>%
   filter(!is.na(Type4)) %>%
   rename(Product = 'Type4')
 prod5 <- cleanData %>%
-  select(Division, Type5, OrderAmount) %>%
+  select(Division, Type5, OrderYear, OrderAmount) %>%
   filter(!is.na(Type5)) %>%
   rename(Product = 'Type5')
 
@@ -151,6 +152,57 @@ topDivisions
 allProducts %>%
   count(Division, Product) %>%
   arrange(desc(n))
+```
+
+
+```{r}
+# Visualize product orders by year
+
+prodYears <- allProducts %>%
+  filter(OrderYear < 2017) %>%
+  select(Product, OrderYear) %>%
+  group_by(Product, OrderYear) %>%
+  count(Product) %>%
+  arrange(OrderYear, Product)
+
+
+#Change line types by groups (supp)
+ggplot(prodYears, aes(x=OrderYear, y=n, group=Product, colour = Product)) +
+  geom_line(aes(linetype=Product)) +
+  labs(x = "Years", y = "Orders")
+```
+
+
+```{r}
+# Visualize division orders by year
+
+divYears <- allProducts %>%
+  filter(OrderYear < 2017) %>%
+  select(Division, OrderYear) %>%
+  group_by(Division, OrderYear) %>%
+  count(Division) %>%
+  filter(n > 20) %>%
+  arrange(OrderYear, Division)
+
+
+#Change line types by groups (supp)
+ggplot(divYears, aes(x=OrderYear, y=n, group=Division, colour = Division)) +
+  geom_line(aes(linetype=Division)) +
+  labs(x = "Years", y = "Orders")
+```
+
+
+```{r}
+temp <- cleanData %>%
+  filter(OrderYear < 2017) %>%
+  select(OrderYear) %>%
+  group_by(OrderYear) %>%
+  count(OrderYear) %>%
+  arrange(OrderYear)
+
+ggplot(temp, aes(x=OrderYear, y=n)) +
+  geom_line() +
+  labs(x = "Years", y = "Orders")
 ```
 
 

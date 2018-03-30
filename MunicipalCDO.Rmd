@@ -1,6 +1,8 @@
 ---
 title: "Municipal Chief Data Officer Review"
-output: html_notebook
+output: 
+  html_notebook:
+    toc: yes
 ---
 City of Toronto Data Story <br>
 Open Data Team <br>
