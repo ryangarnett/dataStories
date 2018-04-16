@@ -1,9 +1,10 @@
 ---
 title: "Municipal Chief Data Officer Review"
 output:
-  html_notebook: default
-  html_document: default
-  pdf_document: default
+  html_document:
+    toc: true
+    df_print: paged
+  html_notebook: null
 ---
 City of Toronto Data Story  
 Open Data Team  
@@ -19,7 +20,7 @@ library(tidyverse)
 library(RCurl)
 library(leaflet)
 
-sourceData <- read_csv("C:/Users/rgarnet/Downloads/dataStories-master/CDOevaluation.csv")
+sourceData <- read_csv("~/Github/dataStories/CDOevaluation.csv")
 sourceData
 ```
 

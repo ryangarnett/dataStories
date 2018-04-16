@@ -1,6 +1,8 @@
 ---
-title: "GCC Services - t-shirt sizes"
-output: html_notebook
+title: "Review of Geospatial Services"
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r}
@@ -205,4 +207,9 @@ ggplot(temp, aes(x=OrderYear, y=n)) +
   labs(x = "Years", y = "Orders")
 ```
 
+```{r}
+# Write data frame to CSV
+
+write.csv(cleanData, file = "~/Github/dataStories/mapSalesCleanData.csv")
+```
 
