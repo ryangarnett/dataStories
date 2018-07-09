@@ -1,0 +1,24 @@
+Organization,Title,ReportsTo,TeamSize,HasOpenData,HasAnalytics,DegreeType,DegreeFocus,Lat,Long,Population,OpenDataRank,Country
+Allegheny County,"Director of Data Analytics, Research and Evaluation",Director of Dept. Human Services,40,No,No,MSc,Public Policy,40.4451,-80.0088,1230000,,USA
+City of Boston,Chief Data Officer,Chief Information Officer,22,No,Yes,PhD,Politics,42.3601,-71.0589,673184,61,USA
+City of Chicago,Chief Data Officer,Chief Information Officer,13,Yes,Yes,MSc,Economics,41.8781,-87.6298,2705000,13,USA
+City of Cincinnati,Chief Data Officer,Chief Performance Officer,1,Yes,No,BSc,Computer Science,39.1031,-84.512,298800,7,USA
+City of Denver,Chief Information Officer,"Divided amoung Chief of Staff, CIO and Chief Attorney",,No,No,MBA,International Business,39.7392,-104.9903,682545,78,USA
+City of Kansas City,Chief Knowledge Officer,Assistant County Administrator,5,Yes,Yes,MBA,Organizational Change,39.0997,-94.5786,481420,19,USA
+City of Los Angeles,Chief Data Officer,Deputy Mayor,4,Yes,Yes,Masters,Public Policy,34.0522,-118.2437,3976000,78,USA
+City of Louisville,Data Officer,Chief of Civic Innovation,2,No,No,BSc,Computer Programming and Design,38.2527,-85.7585,615366,9,USA
+City of Minneapolis,Director of Business Intelligence and Data Services,Chief Information Officer,5,No,No,MSc,Soil Science,44.9778,-93.265,413651,78,USA
+City of New Orleans,Director Office of Performance and Accountability,1st Deputy Mayor,6,Yes,Yes,Masters,Public Policy Analysis,29.9511,-90.0715,389738,61,USA
+City of New York,Chief Analytics Officer,Director of Operations,8,Yes,Yes,PhD,Engineering,40.7128,-74.006,8538000,18,USA
+City of Philadelphia,Chief Data Officer,Chief Adimistrative Officer,10,Yes,No,BA,Political Science,39.9526,-75.1652,1568000,37,USA
+City of Pittsburgh,Analytics and Strategy Manager,Chief Innovation & Performance Officer,4,Yes,Yes,Masters,Public Administration,40.4406,-79.9959,303635,8,USA
+City of San Diego,Chief Data Officer,Director of Performance and Analytics,2,No,Yes,BSc,Information Systems,32.7157,-117.1611,1391000,59,USA
+City of San Francisco,Chief Data Officer,Mayor,7,Yes,No,Masters,Public Policy Analysis,37.7749,-122.4194,864816,1,USA
+City of San Jose,Data Analytics Lead,Deputy City Manager,4,Yes,Yes,Masters,Public Policy Analysis,37.3382,-121.8863,1025000,78,USA
+City of Seattle,Organizational Performance Manager,Organizational Performance Director,1,No,Yes,MSc,Environment Heath & Public Administration,47.6062,-122.3321,704352,61,USA
+City of South Bend,Chief Innovation Officer,Mayor,25,No,No,MSc,"Entrepreneurship in Science, Engineer and Technology",41.6764,-86.252,101735,29,USA
+City of Washington,Chief Data Officer,Chief Technology Officer,19,Yes,Yes,Masters,City Planning,38.9072,-77.0369,693972,4,USA
+City of Hamilton,Chief Digital Officer,City Manager,,Yes,No,,,43.2557,-79.8711,551751,,Canada
+City of Montreal,Chief Smart City and Digital Officer,VP Executive Committee,,Yes,No,BA,Marketing,45.5017,-73.5673,1741000,7,Canada
+City of Winnipeg,Chief Innovation Officer,Chief Adimistrative Officer,,Yes,No,,,49.8951,-97.1384,709253,3,Canada
+City of Edmonton,Chief Analytics Officer,Deputy City Manager,,Yes,Yes,BSc,Civil Engineering,53.5444,-113.4909,928182,1,Canada
