@@ -1,0 +1,353 @@
+---
+title: "Using RStudio as a GIS"
+output: html_notebook
+---
+
+### 1.0 Overview
+
+
+### 2.0 Prerequisits
+
+
+```{r}
+# Loading required packages that wil be used within this workshop. Note that a package must be installed in order to loaded it using the library() call.
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(mapview)
+```
+
+
+#### 2.1 Loading Vector Data
+
+```{r}
+# Data downloaded from City of Toronto's Open Data Catalog
+# https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/
+
+# Load vector (shapefile) information
+setwd("C:/WorkDocs/rGIS/vector")
+
+schools <- st_read("SCHOOL.shp")
+subway <- st_read("TTC_SUBWAY_LINES.shp")
+wards <- st_read("cityprj.ward_2018.shp")
+#zoning <- st_read("ZONING_ZONE_CATAGORIES.shp")
+```
+
+
+### 3.0 Plotting Vectors
+
+#### 3.1 Basic Plotting with ggplot2
+
+```{r}
+#Plot point vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = schools)
+```
+
+
+```{r}
+#Plot line vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = subway)
+```
+
+
+```{r}
+#Plot polygon vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = wards)
+```
+
+
+```{r}
+#Plot point, line and polygon vector together using ggplot2
+#Plot using simple symbology
+ggplot() +
+  geom_sf(data = wards) +
+  geom_sf(data = subway, color = subway$RID, size = 1.25) +
+  geom_sf(data = schools, size = 0.75)
+```
+
+
+
+### 4.0 Working with Vectors
+
+
+#### 4.1 Exploring Geometry
+```{r}
+#Count the number of nodes
+#npts(address)
+#npts(centreline)
+#npts(properties)
+npts(schools)
+npts(subway)
+npts(wards)
+#npts(zoning)
+```
+
+
+```{r}
+#Calculate area of polygon
+st_area(wards)               #area of each polygon
+sum(st_area(wards))          #sum of all polygons
+sum(st_area(wards))/1000000  #calculating the sum of all polygons in km^2
+```
+
+
+```{r}
+#Add attribute to polygon with calculated area
+wards$area_m <- st_area(wards)
+head(wards)
+```
+
+
+```{r}
+#Calculate XY location for point vector
+st_coordinates(schools)
+```
+
+
+```{r}
+#Add attribute with XY location to point vector
+schools <- st_coordinates(schools)
+head(schools)
+```
+
+
+
+```{r}
+#Calculate length of line
+st_length(subway)
+```
+
+
+```{r}
+#Add attribute to line with length
+subway$length_m <- st_length(subway)
+head(subway)
+```
+
+
+
+```{r}
+#Check for valid geometry (OGC)
+ogcGeom <- st_is_valid(wards)     #test layer for valid geometry
+length(ogcGeom[ogcGeom == FALSE])  #count the number of invalid geometry
+length(ogcGeom[ogcGeom == TRUE])   #count the number of valid geometry
+```
+
+
+```{r}
+#Calculate centroid of polygon
+wards_cent <- st_centroid(wards)
+```
+
+
+```{r}
+#Visualize centroids using ggplot
+
+ggplot() +
+  geom_sf(data = wards) +
+  geom_sf(data = wards_cent)
+```
+
+
+
+#### 4.2 Exploring Attributes
+
+
+```{r}
+#Explore address data data
+
+```
+
+
+```{r}
+#Explore centreline data
+```
+
+
+```{r}
+#Explore properties data
+```
+
+
+```{r}
+#Explore wards data
+```
+
+
+```{r}
+#Explore zoning data
+```
+
+
+```{r}
+#Unique attributes
+unique(address$CLASS)
+```
+
+
+```{r}
+#Count unique attributes
+address %>%
+  group_by(CLASS) %>%
+  count(CLASS)
+```
+
+
+```{r}
+#Select specific columns
+```
+
+
+```{r}
+#Filter operators
+```
+
+
+```{r}
+#Filter by single attribute
+```
+
+
+```{r}
+#Filter by multiple attributes in one column
+```
+
+
+```{r}
+#Filter by multiple attributes in multiple columns
+```
+
+
+
+```{r}
+#Calculate attribute based on values
+```
+
+
+```{r}
+#Calculate attributes based on another attribute
+#(zoning desc, zoning class
+#ifelse == 
+#ifelse '%in%')
+```
+
+
+#### 3.3 Transforming Vectors
+```{r}
+#Reproject data to lat/long WGS84
+```
+
+
+
+```{r}
+#Reproject data to UTM NAD83
+```
+
+
+#### 3.4 Visualizing Vectors
+
+
+##### 3.4.1 Charts and Graphs
+```{r}
+#Using ggplot2 to view attribute information (bar chart)
+```
+
+
+```{r}
+#Using ggplot2 to view attribute information (line chart)
+```
+
+
+```{r}
+#Using ggplot2 to view attribute information (historgram)
+```
+
+
+```{r}
+#Using ggplot2 to view attribute information (scatter plot)
+```
+
+
+```{r}
+#Using ggplot2 to view attribute information (pie chart)
+```
+
+
+
+##### 3.4.2 Static Maps
+```{r}
+#Using ggplot2 to create static maps
+```
+
+
+##### 3.4.3 Dynamic Maps
+```{r}
+#Using Leaflet to create dynamic maps
+
+#Transform data from MTM projection to WGS84 for use in Leaflet (webmapping)
+wards_wgs84 <- st_transform(wards, 4326)
+
+# Visualize wards on Leaflet map
+leaflet(data = wards_wgs84) %>%
+  addPolygons(fillOpacity = 0.15,
+              color = "black",
+              weight = 1,
+              popup = wards_wgs84$AREA_SHORT) %>%
+  addProviderTiles(providers$CartoDB.Positron)
+```
+
+
+#### 3.5 Spatial Analysis
+```{r}
+#Buffer
+st_buffer(wards, 1000)
+```
+
+
+```{r}
+#Buffer selected record
+ward_selBuffer <- wards %>%
+  filter(AREA_SHORT == "43") %>%
+  st_buffer(1000)
+
+plot(ward_selBuffer)
+```
+
+
+
+```{r}
+#Dissolve
+```
+
+
+```{r}
+#Clip
+```
+
+
+```{r}
+#Count points in polygons
+```
+
+
+```{r}
+#Count features within distance of feature
+```
+
+
+```{r}
+#Update column using spatial intersection
+```
+
+
+https://edzer.github.io/UseR2017/
+
+
+### 5.0 Resources
+
