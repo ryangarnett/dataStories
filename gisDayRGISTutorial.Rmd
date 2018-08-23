@@ -1,14 +1,66 @@
 ---
 title: "Using RStudio as a GIS"
+venue: "GIS Day 2018"
 output: html_notebook
 ---
 
 ### 1.0 Overview
+Analyzing, evaluating and visualizing geographic data is a common requirement within municipal governments. Typically these tasks have been undertaken within commercial or open source GIS software application (i.e. ArcMap, GRASS, MapInfo, QGIS, etc.). GIS applications are typically graphic user interfaces (GUI) that are comprised of a number of tools that can be used to perform analysis and visualization tasks. 
 
+R is an open source language that is typically considered to be used for statistical analysis. As a language R has been around for approximately 25 years, experiencing significant advancements. R Studios is a GUI based interface to R that allows for analysis, visualization, modelling, and more. 
 
-### 2.0 Prerequisits
+Within the domain of GIS R provides an excellent platform for data analysis, exploration, modelling, and visualization. The R community is very active in the development and advancement of geospatial packages (tools/libraries) that are available. This workshop will focus on providing an introduction to the understanding of capabilities of using R Studios as a GIS application. Within the workshop examples will focus on vector data, specifically around visualization, data exploration, and geoprocessing.
 
+### 2.0 Prerequisites
+R Studio, similar to other software application, has the capability to extend functionality via add-ins. Within the world of R add-ins are called "packages". A package is similar to a library in other programming languages (i.e. Python), or extensions in GIS applications (i.e. ArcMap or QGIS). 
 
+As of August 17, 2018 there were 12,851 packages available on the official repository. In order to access a package it must first be installed, which can be done with the following line of code: install.packages("packageName") i.e. install.packages("tidyverse"). Once a package is installed it must be accessed using a command called *library*. Within the tutorial we will be using four packages: tidyverse, sf, leaflet, and mapview.
+
+<br>
+***tidyverse***
+
+The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures. The core tidyverse includes the packages that you're likely to use in everyday data analyses. As of tidyverse 1.2.0, the following packages are included in the core tidyverse:
+
+* ggplot2
+* dplyr
+* tidyr
+* readr
+* purrr
+* tibble
+* stringr
+* forcats
+
+<br>
+***sf***
+
+Support for simple features, a standardized way to encode spatial vector data. Binds to 'GDAL' for reading and writing data, to 'GEOS' for geometrical operations, and to 'PROJ' for projection conversions and datum transformations.
+
+<br>
+***leaflet***
+
+Leaflet is one of the most popular open-source JavaScript libraries for interactive maps. It's used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB. Leaflet features include:
+
+* Interactive panning/zooming
+* Compose maps using arbitrary combinations of:
+    + Map tiles
+    + Markers
+    + Polygons
+    + Lines
+    + Popups
+    + GeoJSON
+* Create maps right from the R console or R Studio
+* Embed maps in knitr/R Markdown documents and Shiny apps
+* Easily render spatial objects from the sp or sf packages, or data frames with latitude/longitude columns
+* Use map bounds and mouse events to drive Shiny logic
+* Display maps in non spherical mercator projections
+* Augment map features using chosen plugins from leaflet plugins repository
+
+<br>
+***mapview***
+
+An R package created to help researchers during their spatial data analysis workflow. It provides functions to very quickly and conveniently create interactive visualizations of spatial data. It was created to fill the gap of quick (not presentation grade) interactive plotting to examine and visually investigate both aspects of spatial data, the geometries and their attributes.
+
+#### 2.1 Packages
 ```{r}
 # Loading required packages that wil be used within this workshop. Note that a package must be installed in order to loaded it using the library() call.
 library(tidyverse)
@@ -18,7 +70,7 @@ library(mapview)
 ```
 
 
-#### 2.1 Loading Vector Data
+#### 2.2 Loading Vector Data
 
 ```{r}
 # Data downloaded from City of Toronto's Open Data Catalog
@@ -34,58 +86,89 @@ wards <- st_read("cityprj.ward_2018.shp")
 ```
 
 
-### 3.0 Plotting Vectors
+### 3.0 Exploring Data
 
-#### 3.1 Basic Plotting with ggplot2
+#### 3.1 Exploring Attributes
+
 
 ```{r}
-#Plot point vector using ggplot2
-#Plot without symbology
-ggplot() +
-  geom_sf(data = schools)
+#Explore schools data
+#View the structure of the data
+str(schools)
 ```
 
 
 ```{r}
-#Plot line vector using ggplot2
-#Plot without symbology
-ggplot() +
-  geom_sf(data = subway)
+#Unique attributes of a column
+unique(schools$SCL_TP_DSC)
 ```
 
 
 ```{r}
-#Plot polygon vector using ggplot2
-#Plot without symbology
-ggplot() +
-  geom_sf(data = wards)
+#Count unique attributes of a column
+schools %>%
+  group_by(BRD_NAME) %>%
+  count(BRD_NAME)
+```
+
+
+#### 3.1.1 Selecting Subsets of Data
+
+```{r}
+#Selecting columns
+#Select specific columns
+schools %>%
+  select(NAME, SCL_TP, BRD_NAME,SCL_TP_DSC, ADD_FULL, MUN, CITY)
 ```
 
 
 ```{r}
-#Plot point, line and polygon vector together using ggplot2
-#Plot using simple symbology
-ggplot() +
-  geom_sf(data = wards) +
-  geom_sf(data = subway, color = subway$RID, size = 1.25) +
-  geom_sf(data = schools, size = 0.75)
+#Selecting attributes
+#Filter operators (i.e. greater than/less than, equal to, multiple equal, in range of)
+#Value greater than
+schools %>%
+  filter(LO_NUM > 50)
+
+#Value less than
+schools %>%
+  filter(LO_NUM < 50)
+
+#Equal to a value
+schools %>%
+  filter(LO_NUM == 10)
+
+#Multiple records equal to a value
+schools %>%
+  filter(LO_NUM %in% c(10, 20, 30))
+
+#Multiple text records equal to a value
+schools %>%
+  filter(SCL_TP_DSC %in% c("College", "English Public"))
 ```
 
 
+```{r}
+#Selecting attributes
+#Filter attributes in multiple columns
+schools %>%
+  filter(LO_NUM < 50, SCL_TP_DSC == "College")
+```
 
-### 4.0 Working with Vectors
+
+```{r}
+#Combining column and attribute selection
+schools %>%
+  select(NAME, SCL_TP, BRD_NAME,SCL_TP_DSC, LO_NUM, ADD_FULL, MUN, CITY) %>%
+  filter(LO_NUM < 50, SCL_TP_DSC == "College")
+```
 
 
-#### 4.1 Exploring Geometry
+#### 3.2 Exploring Geometry
 ```{r}
 #Count the number of nodes
-#npts(address)
-#npts(centreline)
-#npts(properties)
 npts(schools)
 npts(subway)
 npts(wards)
-#npts(zoning)
 ```
 
 
@@ -93,7 +176,6 @@ npts(wards)
 #Calculate area of polygon
 st_area(wards)               #area of each polygon
 sum(st_area(wards))          #sum of all polygons
-sum(st_area(wards))/1000000  #calculating the sum of all polygons in km^2
 ```
 
 
@@ -102,20 +184,6 @@ sum(st_area(wards))/1000000  #calculating the sum of all polygons in km^2
 wards$area_m <- st_area(wards)
 head(wards)
 ```
-
-
-```{r}
-#Calculate XY location for point vector
-st_coordinates(schools)
-```
-
-
-```{r}
-#Add attribute with XY location to point vector
-schools <- st_coordinates(schools)
-head(schools)
-```
-
 
 
 ```{r}
@@ -129,7 +197,6 @@ st_length(subway)
 subway$length_m <- st_length(subway)
 head(subway)
 ```
-
 
 
 ```{r}
@@ -155,105 +222,222 @@ ggplot() +
 ```
 
 
+### 4.0 Plotting Data
+Displaying data visually within R can be accomplished with the use of many different packages. Within this workshop we will be focusing on the powerful ggplot2 package. ggplot2 allows for the visualization of both attribute and geographic information, resulting in a very useful tool for GIS users. ggplot2 generates static visualizations; the leaflet package will be utilized for dynamic geographic representations.
 
-#### 4.2 Exploring Attributes
+#### 4.1 Static Maps - Simple Symbology
+Maps are an effective visualization for conveying geographic information. A map can server numerous purposes and can range in complexity. In many cases a basic map will suffice when initially exploring a dataset. The following three examples illustrate how to display points, lines and polygons within ggplot2.
 
 
 ```{r}
-#Explore address data data
-
+#Plot point vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = schools)
 ```
 
 
 ```{r}
-#Explore centreline data
+#Plot line vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = subway)
 ```
 
 
 ```{r}
-#Explore properties data
+#Plot polygon vector using ggplot2
+#Plot without symbology
+ggplot() +
+  geom_sf(data = wards)
+```
+
+
+#### 4.2 Static Maps - Advanced Symbology
+While basic maps can be useful for initial data exploration, understanding tends and relationships from a basic map can be difficult. A method to gain visual insights is to use different symbology techniques. Within the workshop we will be focusing on six symbology techniques: colours, opacity, size, shapes, labels, and legends. Examples with points, lines and polygons will be illustrated. 
+
+
+##### 4.2.1 Static Maps - Advanced Symbology: Colours
+
+
+***Points***
+```{r}
+#Map setting the color using color text
+#Map schools
+ggplot() +
+  geom_sf(data = schools, color = "red")
 ```
 
 
 ```{r}
-#Explore wards data
+#Map setting the color using hex code
+#Map schools
+ggplot() +
+  geom_sf(data = schools, color = "#FF0000")
 ```
 
 
 ```{r}
-#Explore zoning data
+#Map setting the color based on attribute values
+#Map schools
+ggplot() +
+  geom_sf(data = schools, aes(color = SCL_TP_DSC))
+```
+
+***Lines***
+```{r}
+#Map setting the color using color text
+#Map subway lines
+ggplot() +
+  geom_sf(data = subway, color = "red")
 ```
 
 
 ```{r}
-#Unique attributes
-unique(address$CLASS)
+#Map setting the color using hex code
+#Map subway lines
+ggplot() +
+  geom_sf(data = subway, color = "#FF0000")
 ```
 
 
 ```{r}
-#Count unique attributes
-address %>%
-  group_by(CLASS) %>%
-  count(CLASS)
+#Map setting the color based on attribute values
+#Map subway lines
+ggplot() +
+  geom_sf(data = subway, aes(color = ROUTE_NAME))
+```
+
+
+***Polygons***
+
+```{r}
+#Map setting the color using color text
+#Map ward polygons
+ggplot() +
+  geom_sf(data = wards, fill = "red", color = "white")   
+# fill controls the internal polygon colour; color controls the outline polygon colour
 ```
 
 
 ```{r}
-#Select specific columns
+#Map setting the color using hex code
+#Map ward polygons
+ggplot() +
+  geom_sf(data = wards, fill = "#FF0000", color = "#ffffff")
+# fill controls the internal polygon colour; color controls the outline polygon colour
 ```
 
 
 ```{r}
-#Filter operators
+#Map setting the color based on attribute values
+#Map ward polygons
+ggplot() +
+  geom_sf(data = wards, aes(fill = AREA_NAME))
+```
+
+##### 4.2.2 Static Maps - Advanced Symbology: Transparency
+
+
+***Points***
+```{r}
+#Map setting the color using color text
+#Map schools
+ggplot() +
+  geom_sf(data = schools, alpha = 0.25)
+#Alpha is the means for controlling transparency. Values from 1 to 0 are used to set the transparency level, with 0 being fully transparent and 1 having no transparency.
+```
+
+
+***Lines***
+```{r}
+#Map setting the color using color text
+#Map schools
+ggplot() +
+  geom_sf(data = subway, alpha = 0.25)
+#Alpha is the means for controlling transparency. Values from 1 to 0 are used to set the transparency level, with 0 being fully transparent and 1 having no transparency.
+```
+
+***Polygons***
+```{r}
+#Map setting the color using color text
+#Map schools
+ggplot() +
+  geom_sf(data = wards, alpha = 0.25, fill = "red")
+#Alpha is the means for controlling transparency. Values from 1 to 0 are used to set the transparency level, with 0 being fully transparent and 1 having no transparency.
+```
+
+
+##### 4.2.3 Static Maps - Advanced Symbology: Sizes
+
+
+***Points***
+```{r}
+#Map setting the visual size of the points using a static value
+#Map schools
+ggplot() +
+  geom_sf(data = schools, size = 1)
+```
+
+
+***Lines***
+```{r}
+#Map setting the visual size (width) of the lines using a static value
+#Map subways
+ggplot(data = subway) +
+  geom_sf(aes(size = 3))
 ```
 
 
 ```{r}
-#Filter by single attribute
+#Map setting the visual size (width) of the lines using an attribute value
+#Map subways
+ggplot(data = subway) +
+  geom_sf(aes(size = RID))
 ```
+
+
+##### 4.2.4 Static Maps - Advanced Symbology: Shapes
+
+
+##### 4.2.5 Static Maps - Advanced Symbology: Labels
+
+
+##### 4.2.6 Static Maps - Advanced Symbology: Legends
+
+
+##### 4.2.6 Static Maps - Advanced Symbology: Combining it all Together
 
 
 ```{r}
-#Filter by multiple attributes in one column
+#Map with point, line and polygon vector together
+ggplot() +
+  geom_sf(data = wards) +
+  geom_sf(data = subway, color = subway$RID, size = 1.25) +
+  geom_sf(data = schools, size = 0.75)
 ```
 
+
+#### 4.3 Dynamic Maps
 
 ```{r}
-#Filter by multiple attributes in multiple columns
+#Using Leaflet to create dynamic maps
+
+#Transform data from MTM projection to WGS84 for use in Leaflet (webmapping)
+wards_wgs84 <- st_transform(wards, 4326)
+
+# Visualize wards on Leaflet map
+leaflet(data = wards_wgs84) %>%
+  addPolygons(fillOpacity = 0.15,
+              color = "black",
+              weight = 1,
+              popup = wards_wgs84$AREA_SHORT) %>%
+  addProviderTiles(providers$CartoDB.Positron)
 ```
 
 
 
-```{r}
-#Calculate attribute based on values
-```
-
-
-```{r}
-#Calculate attributes based on another attribute
-#(zoning desc, zoning class
-#ifelse == 
-#ifelse '%in%')
-```
-
-
-#### 3.3 Transforming Vectors
-```{r}
-#Reproject data to lat/long WGS84
-```
-
-
-
-```{r}
-#Reproject data to UTM NAD83
-```
-
-
-#### 3.4 Visualizing Vectors
-
-
-##### 3.4.1 Charts and Graphs
+#### 4.4 Charts and Graphs
 ```{r}
 #Using ggplot2 to view attribute information (bar chart)
 ```
@@ -279,46 +463,44 @@ address %>%
 ```
 
 
-
-##### 3.4.2 Static Maps
-```{r}
-#Using ggplot2 to create static maps
-```
+### 5.0 Geoprocessing
 
 
-##### 3.4.3 Dynamic Maps
-```{r}
-#Using Leaflet to create dynamic maps
-
-#Transform data from MTM projection to WGS84 for use in Leaflet (webmapping)
-wards_wgs84 <- st_transform(wards, 4326)
-
-# Visualize wards on Leaflet map
-leaflet(data = wards_wgs84) %>%
-  addPolygons(fillOpacity = 0.15,
-              color = "black",
-              weight = 1,
-              popup = wards_wgs84$AREA_SHORT) %>%
-  addProviderTiles(providers$CartoDB.Positron)
-```
-
-
-#### 3.5 Spatial Analysis
 ```{r}
 #Buffer
-st_buffer(wards, 1000)
+#Buffer subway lines - not storing geometry
+st_buffer(subway, 1000)
+
+#Buffer subway lines - storing geometry
+subway_buffer <- st_buffer(subway, 1000)
+
+#Map of buffered subway lines
+ggplot() +
+  geom_sf(data = subway_buffer)
+
+#Map of buffered subway lines with subway lines
+ggplot() +
+  geom_sf(data = subway_buffer) +
+  geom_sf(data = subway, color = subway$RID, size = 1.25)
 ```
 
 
 ```{r}
 #Buffer selected record
-ward_selBuffer <- wards %>%
-  filter(AREA_SHORT == "43") %>%
+#Buffer subway line #2 (Bloor - Danforth)
+subway_buffer_line2 <- subway %>%
+  filter(RID == 2) %>%
   st_buffer(1000)
 
-plot(ward_selBuffer)
-```
+#Map of buffered subway line 2 (Bloor -Danforth)
+ggplot() +
+  geom_sf(data = subway_buffer_line2)
 
+#Map of buffered subway line 2 (Bloor -Danforth) with subway lines
+ggplot() +
+  geom_sf(data = subway_buffer_line2) +
+  geom_sf(data = subway, color=subway$RID, size = 1.25)
+```
 
 
 ```{r}
@@ -331,13 +513,51 @@ plot(ward_selBuffer)
 ```
 
 
+#### 5.1 Transforming Vectors
+
 ```{r}
-#Count points in polygons
+#Reproject data to lat/long WGS84
+subway_wgs84 <- st_transform(subway, 4326)
+
+subway_wgs84
+```
+
+
+
+#### 5.2 Spatial Analysis
+
+
+```{r}
+#Points in polygons - st_intersection
+schoolsInBuffer <- st_intersection(schools, subway_buffer)
+
+#Map points that intersect with subway buffer
+ggplot() +
+  geom_sf(data = subway_buffer) +
+  geom_sf(data = schools, color = "red") +
+  geom_sf(data = schoolsInBuffer, color = "black")
 ```
 
 
 ```{r}
-#Count features within distance of feature
+#Count points within polygon(s) - st_intersection
+#Requires geometry to be created
+count(st_intersection(schools, subway_buffer))
+```
+
+
+```{r}
+#Count points within polygon(s) - st_intersection
+#Does not require geometry to be created
+count(st_intersection(schools, st_buffer(subway, 1000)))
+```
+
+
+```{r}
+#Map points that intersect with subway buffer
+#Does not require geometry to be created
+ggplot() +
+  geom_sf(data = st_intersection(schools, st_buffer(subway, 1000)))
 ```
 
 
@@ -346,8 +566,29 @@ plot(ward_selBuffer)
 ```
 
 
-https://edzer.github.io/UseR2017/
+```{r}
+#Calculate attribute based on values
+```
 
 
-### 5.0 Resources
+```{r}
+#Calculate attributes based on another attribute
+#(zoning desc, zoning class
+#ifelse == 
+#ifelse '%in%')
+```
 
+### 6.0 Resources
+
+[GIS in R](http://www.nickeubank.com/gis-in-r/)
+
+[Spatial Data in R: New Directions](https://edzer.github.io/UseR2017/)
+
+[Geocomputation with R](https://geocompr.robinlovelace.net/)
+
+[R for Data Science](http://r4ds.had.co.nz/)
+
+[ggplot2 Colours Cookbook](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/)
+
+
+[leaflet example](https://ryanpeek.github.io/2017-10-24-mapping-with-sf-part-1/)
