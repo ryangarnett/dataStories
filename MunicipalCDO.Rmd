@@ -9,10 +9,10 @@ output:
 City of Toronto Data Story  
 Open Data Team  
 Author: Ryan Garnett  
-March 19, 2018  
+July 22, 2018  
 
 ### 1.0 Prerequisites and Source Data
-The following analysis was completed in R Studio, taking advantage of different packages, as well as a report on Chief Data Officers and Civic Analytics; produced by Harvard Kennedy School. The report was coded for easy access and analysis.
+The following analysis was completed in R Studio, taking advantage of different packages, as well as a report on Chief Data Officers and Civic Analytics; produced by Harvard Kennedy School. The report was coded for easy access and analysis. Additional web searches were performed to further sources.
 
 ```{r}
 # Loading the packages and data needed for the analysis
@@ -20,7 +20,7 @@ library(tidyverse)
 library(RCurl)
 library(leaflet)
 
-sourceData <- read_csv("~/Github/dataStories/CDOevaluation.csv")
+sourceData <- read_csv("https://raw.githubusercontent.com/ryangarnett/dataStories/master/cdoEvaluation.csv")
 sourceData
 ```
 
@@ -77,7 +77,7 @@ ggplot(sourceData, aes(HasAnalytics)) +
 ```
 
 ##### 2.1.1 Responsibilities Findings
-The Chief Data Officer position tends to have responsibilities for both open data and data analytics. The 19 CDO positions poled indicates eleven (58%) with open data and data analytics responsibilities within their role.   
+The Chief Data Officer position tends to have responsibilities for both open data and data analytics. The 24 CDO positions poled indicates sixteen (67%) with open data and eleven (58%) have data analytics responsibilities within their role.   
 
 #### 2.2 Different Titles
 Chief Data Officer is the predominant title given to leaders responsible for managing data and analytics in municipal governments. The review from the Harvard Kennedy School indicates that Chief Data Officers have the ability to be more effective in their role when they have the authority to lead, and to bring divisions together on shared projects. The addition of "chief" provides a level of importance to the role.
@@ -92,7 +92,7 @@ sourceData %>%
 ```
 
 ##### 2.2.1 Different Titles Findings
-The term "Chief Data Officer" was the most prominent term for the 19 positions reviewed within the United States. Chief Data Officer is the only title to be referenced more than once, eight times (42%).
+The term "Chief Data Officer" was the most prominent term for the 24 positions reviewed within the analysis. Chief Data Officer is the one of three titles to be referenced more than once, nine times (38%).
 
 
 #### 2.3 Reporting Structure
@@ -138,7 +138,7 @@ mutate(reporting, ReportingTo = ifelse(ReportsTo == "Chief Information Officer",
 
 
 ##### 2.3.1 Reporting Structure Findings
-The Chief Data Officer position within the municipal setting varies greatly. From the 19 reviewed, there are eight different groups of reporting structures, with four groups having multiple instances. Over a quarter of CDOs report to a municipal officer focused on innovation and performance. Other significant reporting structure were to the Mayor's Office, CAO/City Manager's Officer, and to the Chief Information Officer.
+The Chief Data Officer position within the municipal setting varies greatly. From the 24 reviewed, there are ten different groups of reporting structures, with four groups having multiple instances. Five CDOs report to a municipal officer focused on innovation and performance. Other significant reporting structure were to the Mayor's Office, CAO/City Manager's Officer, and to the Chief Information Officer.
 
 #### 2.3 Supporting Team
 Municipal organizations developing Chief Data Officer roles typically establish a team to assist with the direction and mandate of the position. The size of the team varies, and in some cases the Chief Data Officer is the only member of the team.
@@ -171,7 +171,7 @@ sourceData %>%
   arrange(desc(n))
 ```
 
-Educational background differs between the 19 CDO positions, with having a Master's degree as the most common degree type. When reviewing the degree findings it is evident that there is a possibility to aggregate degree types to a higher level (i.e. types of Master's and bachelor degrees). 
+Educational background differs between the 24 CDO positions, with having a Master's degree as the most common degree type. When reviewing the degree findings it is evident that there is a possibility to aggregate degree types to a higher level (i.e. types of Master's and bachelor degrees). 
 
 
 ```{r}
@@ -253,11 +253,11 @@ count(FocusArea) %>%
 
 
 ##### 2.5.1 Educational Background Findings
-Post secondary training tends to be an important factor for municipal Chief Data Officers, with 16 individuals achieving higher than a bachelors degree, and 68% completing a Master's degree. The single most represented focus area was related to public policy and public administration. 
+Post secondary training tends to be an important factor for municipal Chief Data Officers, with 16 individuals achieving higher than a bachelors degree, and 58% completing a Master's degree. The single most represented focus area was related to public policy and public administration. 
 
 
 ### 3.0 Municipal CDO Distribution
-The study by the Harvard Kennedy School reviewed Chief Data Officer positions in 19 municipalities in the United States, representing fourteen states. The interactive map below provides a visual means for exploring the characteristics for each of the CDO potions. 
+The study by the Harvard Kennedy School reviewed Chief Data Officer positions in 19 municipalities in the United States, representing fourteen states; additional research identified five similar roles in Canada, each in different provinces. The interactive map below provides a visual means for exploring the characteristics for each of the CDO potions. 
 
 ```{r}
 # Map the CDO locations
@@ -277,6 +277,7 @@ m
 
 ### 4.0 Conclusion and Recommendations
 
+Data and information are critical for evidence based decisions, a significant component for achieving an open government. Upon reviewing 24 municipal Chief Data Officer type roles in North America it appears evident that a City such as Toronto should have a similar role within the organization. As the vast majority of municipal CDO's are responsible for the organization's Open Data program, it would be recommended that the City of Toronto establish a Chief Data Officer position, with Open Data being one of the components in the position's portfolio. 
 
 
 ### 5.0 Source Information

@@ -1,0 +1,193 @@
+---
+title: "Troubles with leading and trailing spaces"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document:
+    df_print: paged
+---
+
+## 1.0 Setting up the environment
+
+### 1.1 Loading packages
+
+```{r}
+library(tidyverse)
+library(sf)
+library(leaflet)
+```
+
+### 1.2 Setting the workspace
+Linux has a little different structure than Windows
+
+```{r}
+setwd("~/dataStories/apartmentClimate/sourceData")
+```
+
+### 1.3 Importing the datasets
+Apartment registration csv
+Address points shapefile
+
+```{r}
+aptBldg <- read_csv("Apartment Building Registration Data.csv")
+address <- st_read("ADDRESS_POINT_WGS84.shp")
+```
+
+
+## 2.0 Perform some data cleaning
+
+* remove unneeded columns
+* convert the address sf object to a dataframe for faster processing, as spatial operations will not be performed
+* convert specific factor data to character
+* create a address field that includes address number and street name, so that the two tables can be joined
+* convert characters to upper case, which is needed for the join
+
+```{r}
+#Clear-up address data
+#Remove unneeded columns
+address <- address %>%
+  select(ADDRESS, LONGITUDE, LATITUDE)
+
+#Convert to data frame
+addressDF <- as.data.frame(address)
+
+#Convert factors to character
+addressDF$ADDRESS <- as.character(addressDF$ADDRESS)
+addressDF$LFNAME <- as.character(addressDF$LFNAME)
+addressDF$LONUMSUF <- as.character(addressDF$LONUMSUF)
+head(addressDF)
+
+#Create combined address column
+addressDF <- addressDF %>%
+  unite(SITE_ADDRESS, c(ADDRESS, LFNAME), sep = " ")
+
+#Convert charter to upper
+addressDF <- mutate_all(addressDF, toupper)
+
+#Remove white space from apartment dataset
+aptBldg <- aptBldg %>%
+  mutate(SITE_ADDRESS = str_squish(SITE_ADDRESS))
+aptBldg
+
+#Join datasets by site_address
+aptBldg <- inner_join(aptBldg, addressDF)
+
+#Convert long/lat back to double
+aptBldg$LONGITUDE <- as.double(aptBldg$LONGITUDE)
+aptBldg$LATITUDE <- as.double(aptBldg$LATITUDE)
+```
+
+
+```{r}
+#Create sf obbject from long/lat coords
+aptBldgGeo <- st_as_sf(aptBldg, coords = c("LONGITUDE", "LATITUDE"), crs = 4326)
+
+aptBldgGeo %>%
+  ggplot() +
+  geom_sf()
+```
+
+
+
+```{r}
+head(aptBldg)
+```
+
+
+```{r}
+m <- leaflet(aptBldg) %>%
+  addTiles() %>%
+  addMarkers(lng = aptBldg$LONGITUDE, lat = aptBldg$LATITUDE,
+             clusterOptions = markerClusterOptions(),
+             popup = paste("Address:", aptBldg$SITE_ADDRESS, "<br>",
+                           "Property owner:", aptBldg$PROP_MANAGEMENT_COMPANY_NAME, "<br>",
+                           "Air conditioning:", aptBldg$AIR_CONDITIONING_TYPE, "<br>",
+                           "Balconies:", aptBldg$BALCONIES, "<br>",
+                           "Bike parking:", aptBldg$BIKE_PARKING, "<br>",
+                           "Garbage chute:", aptBldg$GARBAGE_CHUTES, "<br>",
+                           "Heating type", aptBldg$HEATING_TYPE, "<br>",
+                           "Laundy room:", aptBldg$LAUNDRY_ROOM, "<br>",
+                           "Lockers", aptBldg$LOCKER_OR_STORAGE_ROOM, "<br>",
+                           "Num elevators:", aptBldg$NO_OF_ELEVATORS, "<br>",
+                           "Num of storeys", aptBldg$NO_OF_STOREYS, "<br>",
+                           "Num of units", aptBldg$NO_OF_UNITS, "<br>",
+                           "Visitor parking:", aptBldg$VISITOR_PARKING, "<br>",
+                           "Pets:", aptBldg$PETS_ALLOWED, "<br>",
+                           "Year built:", aptBldg$YEAR_BUILT))
+m
+```
+
+
+```{r}
+#Some analytics
+aptBldg %>%
+  summarize(total_units = sum(NO_OF_UNITS))
+
+aptBldg %>%
+  group_by(BALCONIES) %>%
+  count()
+
+aptBldg %>%
+  group_by(AIR_CONDITIONING_TYPE) %>%
+  count()
+
+aptBldg %>%
+  group_by(HEATING_TYPE) %>%
+  count()
+
+aptBldg %>%
+  group_by(YEAR_BUILT) %>%
+  count() %>%
+  arrange(desc(n))
+
+aptBldg %>%
+  filter(YEAR_BUILT > 1995) %>%
+  group_by(YEAR_BUILT) %>%
+  count() %>%
+  arrange(desc(n))
+```
+
+```{r}
+aptCount <- aptBldg %>%
+  filter(YEAR_BUILT > 1900) %>%
+  group_by(YEAR_BUILT) %>%
+  count() %>%
+  arrange(desc(n))
+```
+
+```{r}
+aptCount
+```
+
+
+```{r}
+aptCount %>%
+  ggplot(aes(YEAR_BUILT, n)) +
+  scale_y_continuous(minor_breaks = seq(0 , 400, 50), breaks = seq(0, 400, 50)) +
+  scale_x_continuous(minor_breaks = seq(1900, 2020, 10), breaks = seq(1900, 2020, 10)) +
+  geom_point()
+```
+
+
+```{r}
+aptBldg %>%
+  filter(YEAR_BUILT >= 1950 & YEAR_BUILT <= 1975) %>%
+  count() %>%
+  summarize(total_built = sum(n))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
